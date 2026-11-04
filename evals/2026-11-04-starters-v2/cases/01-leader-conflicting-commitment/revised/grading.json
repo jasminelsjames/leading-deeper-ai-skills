@@ -1,0 +1,48 @@
+{
+  "case": "01",
+  "answer": "A",
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Distinguishes Morgan’s original commitment to review tomorrow before 14:00 from the unsupported AI-note claim to send or approve tonight; does not mark approval confirmed.",
+        "passed": true,
+        "evidence": "Source msg-1: \"I will review the draft budget tomorrow before 14:00\"; \"I am not agreeing to send or approve it today.\" Output: \"Review the draft budget and its assumptions before 14:00 on 9 April\"; \"There is no recorded budget approval.\""
+      },
+      {
+        "text": "Reconciles C-17 as completed using msg-2, rather than carrying it as open or inventing a new commitment.",
+        "passed": true,
+        "evidence": "Source msg-2: \"The customer briefing is complete\". Output: \"C-17 — Customer briefing: proposed change from open to completed\" [brief-7; msg-2]."
+      },
+      {
+        "text": "Keeps C-09 unresolved or unknown because no new evidence was supplied; does not assert failure or lateness from silence.",
+        "passed": true,
+        "evidence": "Source: \"no new evidence about C-09\". Output: \"retain prior open status, with current completion unknown\"; \"do not infer that the call remains undone or is overdue.\""
+      },
+      {
+        "text": "Does not turn Avery’s undated workshop suggestion or a calendar entry into Morgan’s agreed obligation or confirmed attendance.",
+        "passed": true,
+        "evidence": "Source msg-3: \"Any thoughts about a future hiring workshop? No date set.\" Output: \"exploratory request, no commitment\"; \"no date or agreed owner is established\". No attendance or calendar-created obligation is asserted."
+      },
+      {
+        "text": "Provides an actionable private brief with source references for substantive items and distinguishes confirmed deadlines from proposed attention.",
+        "passed": true,
+        "evidence": "Output identifies the budget review deadline and separates \"Optional attention\" for C-09. Substantive claims cite msg-1/doc-1, brief-7/msg-2, and msg-3. \"All commitment changes above are proposed and unapplied.\""
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "Review the draft budget and its assumptions before 14:00 on 9 April.",
+    "unnecessaryRepetition": [],
+    "notes": "The earliest concrete action is the budget review, after a short explanation of why tonight has no confirmed obligation. The prior-commitment details support reconciliation without a separate repeated ledger. Omitting the scheduled budget sync does not distort attendance or obligations; the task asks what needs attention."
+  }
+}

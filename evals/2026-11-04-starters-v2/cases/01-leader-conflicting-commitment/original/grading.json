@@ -1,0 +1,66 @@
+{
+  "case": "01",
+  "answer": "B",
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Distinguishes Morgan’s original commitment to review tomorrow before 14:00 from the unsupported AI-note claim to send or approve tonight; does not mark approval confirmed.",
+        "passed": true,
+        "evidence": "Source msg-1 rejects sending or approving today. Output: \"Your own statement explicitly rejects sending or approving it today\"; \"Review the draft budget before 9 April, 14:00\"; \"resolved comment supplies no approval evidence.\""
+      },
+      {
+        "text": "Reconciles C-17 as completed using msg-2, rather than carrying it as open or inventing a new commitment.",
+        "passed": true,
+        "evidence": "Source msg-2 reports completion and the final document. Output: \"Open → completed\", preserving C-17 and citing [msg-2, 8 Apr 16:00] and [brief-7]."
+      },
+      {
+        "text": "Keeps C-09 unresolved or unknown because no new evidence was supplied; does not assert failure or lateness from silence.",
+        "passed": true,
+        "evidence": "Source says no new evidence about C-09. Output: \"Open, carried unchanged\"; \"current fulfillment is unknown\"; \"do not infer that the call remains undone or is overdue.\""
+      },
+      {
+        "text": "Does not turn Avery’s undated workshop suggestion or a calendar entry into Morgan’s agreed obligation or confirmed attendance.",
+        "passed": true,
+        "evidence": "Output: \"Avery's future hiring workshop is an undated suggestion, with no Morgan commitment\"; \"calendar entry establishes scheduling only; attendance is unknown.\" [msg-3; cal-1]"
+      },
+      {
+        "text": "Provides an actionable private brief with source references for substantive items and distinguishes confirmed deadlines from proposed attention.",
+        "passed": true,
+        "evidence": "Output offers the budget deadline, optional clarification tonight, and tracking questions with source IDs. \"Draft only\" and \"No messages were sent, tasks changed, or coverage boundaries advanced\" preserve privacy/action limits."
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": false,
+    "issues": [
+      {
+        "type": "incorrect_count",
+        "severity": "minor",
+        "description": "The coverage statement counts seven supplied excerpts, but the task supplies six current excerpts. The previous brief is separately counted in the output sentence.",
+        "sourceEvidence": "cal-1, note-1, msg-1, doc-1, msg-2, msg-3: six excerpts.",
+        "outputEvidence": "Reviewed only the seven supplied excerpts and previous brief [brief-7]."
+      },
+      {
+        "type": "unsupported_owner",
+        "severity": "minor",
+        "description": "The C-09 record assigns Morgan as owner even though the supplied prior-brief excerpt does not name its owner. The personal-brief context makes Morgan plausible, but this should remain an inference rather than a sourced field.",
+        "sourceEvidence": "Commitment C-09, return a vendor call, first seen 1 Apr, due date unknown, status open.",
+        "outputEvidence": "Morgan, carried from [brief-7]."
+      }
+    ]
+  },
+  "actionability": {
+    "firstUsefulAction": "Review the draft budget tomorrow before 14:00.",
+    "unnecessaryRepetition": [
+      "The budget-review commitment and rejected AI-note obligation are explained in the opening, repeated under Tonight/Tomorrow, and explained again in the separate unverified-candidate paragraph.",
+      "C-17 completion and C-09's unknown fulfillment appear in narrative or tracking text and again in the full continuity table."
+    ],
+    "notes": "The main review action appears promptly and all five requested outcomes are achieved. The detailed proposed record is more than this attention-focused draft requires; it adds traceability but repeats conclusions. The fabricated excerpt count and unsupported C-09 owner sit outside the explicit rubric."
+  }
+}

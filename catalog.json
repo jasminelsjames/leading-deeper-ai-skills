@@ -104,7 +104,7 @@
       "requestContext": "Reader: [who needs this]\nQuestions: [what they need to understand]\nSources: [approved excerpts with dates and references]\nScope: [what to include or leave out]\n\nAsk which questions the next reader needs to answer. Use the material I provide or scoped read access I authorize. Return referenced explanations, an entry point and gaps to review. Keep uncertain claims visible and return a draft.",
       "talkTitle": "Build reusable context",
       "firstUse": {
-        "result": "A knowledge starting point with sources and unanswered questions.",
+        "result": "A referenced guide for the next reader, with an entry point and unanswered questions.",
         "context": [
           "The questions the next reader needs to answer.",
           "Relevant documents, code or conversations with source labels.",
@@ -120,7 +120,7 @@
     {
       "id": "delegate-reviewable-work",
       "title": "Delegate work you can review",
-      "summary": "Define the result, boundaries and acceptance checks before work starts. Get a result you can inspect.",
+      "summary": "Turn a vague handoff into a task brief or reviewable result, with boundaries, acceptance checks and a stopping point.",
       "updated": "2026-11-04",
       "sourcePath": "skills/delegate-reviewable-work/SKILL.md",
       "publicPath": "leading-deeper/skills/delegate-reviewable-work/SKILL.md",
@@ -168,7 +168,7 @@
         ],
         "checks": [
           "Check comparable cases and arithmetic.",
-          "Keep unknowns visible before claiming a saving."
+          "Keep unknowns visible; you decide whether to keep, revise or stop the automation."
         ]
       },
       "examplePath": "examples/assess-workflow-value.json"

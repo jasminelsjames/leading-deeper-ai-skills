@@ -1,0 +1,49 @@
+{
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Explicitly declines to identify a defensible repeated automation candidate from the provided one-off examples.",
+        "passed": true,
+        "evidence": "Source: only one-off examples and “no ... repeated preparation steps.” Output: “There isn’t enough evidence here to choose a sensible first automation” and “automate none of these on the evidence available.”"
+      },
+      {
+        "text": "Keeps product-closure judgment, career conversation and live incident decision-making human-owned rather than recommending full automation.",
+        "passed": true,
+        "evidence": "Output: “accountable decision-maker ... own the decision”; “Listening and coaching matter”; “incident owner remains accountable” and team practice interpreting changing facts."
+      },
+      {
+        "text": "Asks for or suggests a small concrete recurring-work example or repeated preparation step that would enable a later choice.",
+        "passed": true,
+        "evidence": "Output: “bring one recurring preparation or coordination step, who owns it, a representative input and what would make its output correct.”"
+      },
+      {
+        "text": "Offers a way to proceed from supplied examples without requiring connected tools or broad private-system access.",
+        "passed": true,
+        "evidence": "Output: “Preparation within these activities might eventually be a useful AI opportunity” followed by a concrete next-example request; “Connected tools are unnecessary for that identification.”"
+      },
+      {
+        "text": "Does not claim measured or estimated time savings without evidence or proceed to build/deploy an automation.",
+        "passed": true,
+        "evidence": "Output: “Effort and potential benefit are also unknown.” It makes no numerical savings claim and provides identification guidance, with no build or deployment."
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "“There isn’t enough evidence here to choose a sensible first automation.” It then asks for one recurring preparation or coordination step to support a later choice.",
+    "unnecessaryRepetition": [
+      "The concluding “automate none of these” restates the opening refusal to choose.",
+      "The table’s “None supplied” entries repeat the same lack of repeated-step evidence three times; the following paragraph restates that gap."
+    ],
+    "notes": "Correctly declines to invent a candidate and respects the identification-only scope. The table explicitly explains each activity’s human value, but repeats information that can be conveyed more economically. No material factual error or omission."
+  }
+}

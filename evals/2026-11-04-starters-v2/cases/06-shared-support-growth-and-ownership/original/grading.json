@@ -1,0 +1,49 @@
+{
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Distinguishes repeated configuration retrieval/drafting from diagnostic questions that develop new engineers’ expertise.",
+        "passed": true,
+        "evidence": "Output: “finding reviewed configuration instructions and drafting a cited reply”; “Keep diagnosis and discussion with people, including the two new on-call engineers”; the work map preserves recognition and diagnostic practice."
+      },
+      {
+        "text": "Chooses a small support trial using the six sanitized threads and reviewed docs, without making a Slack connector or production access prerequisite.",
+        "passed": true,
+        "evidence": "Output: “Casey supplies the six sanitized historical threads and reviewed documentation as pasted files”; “Pasted files and an AI chat are enough. No Slack MCP, production access or additional service connection is needed.”"
+      },
+      {
+        "text": "Keeps Casey as process/trial owner and an experienced engineer checking answers, with publication or consequential answers reviewed by people.",
+        "passed": true,
+        "evidence": "Output: “Casey owns the trial; an experienced engineer checks its answers”; Casey decides whether to stop; people own technical judgments and future publication; any later answer is approved and posted by a person."
+      },
+      {
+        "text": "Does not infer saved time or support-wide improvement from message counts or the six-question sample; unmeasured effort and uncertain results stay explicit.",
+        "passed": true,
+        "evidence": "Output: “small sample does not establish the ongoing configuration share, and time per question is unknown”; “Six threads provide directional evidence, not a reliable savings estimate.”"
+      },
+      {
+        "text": "Defines observable quality and human-effort or interruption checks, a stop/revise condition, and preserves migration ownership and on-call learning as intended benefits.",
+        "passed": true,
+        "evidence": "Output: measure manual lookup/preparation and AI waiting/review/correction, citation accuracy, errors and rework; stop for unsupported changes, diagnostic answering, invented citations or excess effort; compare interruptions later and preserve “uninterrupted migration time and continued diagnostic learning.”"
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "“Start with an offline assistant for finding reviewed configuration instructions and drafting a cited reply.” The concrete first trial step is Casey providing the six sanitized threads and reviewed docs.",
+    "unnecessaryRepetition": [
+      "The work-map configuration row and first ranked opportunity repeat the same reason for choosing configuration lookup.",
+      "Casey’s ownership, experienced review and retained human diagnosis are repeated in the opening, work map, trial People section and later pilot discussion."
+    ],
+    "notes": "Complete and actionable for the requested recommendation and trial design. The work map, ranking and labeled failure variants make scope and quality boundaries explicit, but add length beyond the core six-thread experiment. The cap of six examples plus variants and one revision keeps the extra checks bounded. No material factual error or omission."
+  }
+}

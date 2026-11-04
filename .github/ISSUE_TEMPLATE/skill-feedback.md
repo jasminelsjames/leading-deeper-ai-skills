@@ -5,9 +5,9 @@ about: Share a result, problem or improvement
 
 **Which skill did you try?**
 
-**What did you want, and what happened?**
+**What did you use it for, and what result did you get?**
 
-**What worked, or what would make it better?**
+**What did you have to correct, and what would make the next run better?**
 
 **Agent and model, if known:**
 

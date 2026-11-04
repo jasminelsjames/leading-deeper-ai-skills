@@ -38,7 +38,7 @@ I choose the priorities. Do not send messages or change tasks.
 
 ## What have we tested?
 
-[Read the first evaluation](evals/2026-11-04-starters-v1/README.md): two starter skills, six fictional cases, and the actual answers with and without each skill. Results include longer answers and an error found outside the grading checks. This is an initial AI-graded comparison, not a productivity benchmark.
+[Initial comparison](evals/2026-11-04-starters-v1/README.md) and [concision revision](evals/2026-11-04-starters-v2/README.md): actual outputs, checks and limits for the two starter skills. The revision retained the original checks in six known cases and shortened five answers. These are small AI-reviewed tests, not a productivity benchmark.
 
 ## Was the result useful?
 

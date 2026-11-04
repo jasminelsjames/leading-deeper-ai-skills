@@ -1,0 +1,10 @@
+Help me catch up on my private debrief after a missed run. I am Alex, mixed leadership and IC focus. Cutoff is 10 April 2030 at 18:00 America/New_York. Return a draft and proposed continuity record in your answer. Do not save anything, change coverage records, schedule jobs or contact anyone.
+
+Previous brief [brief-8] has source boundaries: Slack successfully read through 8 Apr 18:00; GitHub through 8 Apr 18:00; Docs through 7 Apr 18:00. End boundaries are exclusive. Commitment C-8: Alex will review migration draft, first seen 5 Apr, due 9 Apr, status open, source [msg-old]. Commitment C-2: Alex to check incident followup, first seen unknown, due date unknown, status unclear.
+
+Available catchup excerpts:
+[msg-a, 8 Apr 18:00] Alex: I will review the migration draft by tomorrow noon. This is the same C-8 promise, not a new task.
+[msg-b, 9 Apr 12:00] Alex: The migration review is done; my comments are on [doc-review].
+[gh-9, 10 Apr 10:00] PR #73 is closed without merge. Its author says the experiment is paused, not released.
+[msg-c, 10 Apr 17:00] Jo: C-2 might be handled; I cannot confirm. No supporting record.
+Slack retrieval complete for [8 Apr 18:00,10 Apr 18:00). GitHub complete for that interval. Docs retrieval failed and no documents were read. Some Slack exports overlap the last run. There is no write permission for a continuity store.

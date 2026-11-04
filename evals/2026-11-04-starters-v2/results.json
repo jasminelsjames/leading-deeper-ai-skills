@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "studyId": "2026-11-04-starters-v2",
+  "date": "2026-11-04",
+  "title": "Starter skill concision regression check",
+  "sourceRepository": "https://github.com/jasminelsjames/leading-deeper-ai-skills",
+  "sourceCommit": "cfb7338c138386b7fb06cdbf3fd646cf29aea893",
+  "originalStudyId": "2026-11-04-starters-v1",
+  "originalSourceCommit": "c84292ad2f7c2d1411833ca0c26ed464b5af35e4",
+  "freshExecutions": 6,
+  "caseCount": 6,
+  "shorterAnswers": 5,
+  "modelSetup": "Fresh Codex subagents inheriting the same session configuration; exact backend model identifier unavailable. No model override.",
+  "comparison": "Six fresh revised-skill executions on unchanged known cases, compared with saved original skill outputs. Historical outputs were regraded under the same rubric. No new no-skill baseline was run.",
+  "grading": "Two fresh Codex graders reviewed three blinded A/B pairs each, then the coordinating AI inspected outputs and grades. No human scoring.",
+  "summary": {
+    "original": {
+      "passed": 30,
+      "total": 30,
+      "approximateWords": 3052
+    },
+    "revised": {
+      "passed": 30,
+      "total": 30,
+      "approximateWords": 2364
+    }
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "leader-conflicting-commitment",
+      "skill": "daily-debrief",
+      "conditions": {
+        "revised": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 366,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/01-leader-conflicting-commitment/revised/answer.md",
+          "grading": "cases/01-leader-conflicting-commitment/revised/grading.json"
+        },
+        "original": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 575,
+          "factualReview": {
+            "passed": false,
+            "issues": [
+              {
+                "type": "incorrect_count",
+                "severity": "minor",
+                "description": "The coverage statement counts seven supplied excerpts, but the task supplies six current excerpts. The previous brief is separately counted in the output sentence.",
+                "sourceEvidence": "cal-1, note-1, msg-1, doc-1, msg-2, msg-3: six excerpts.",
+                "outputEvidence": "Reviewed only the seven supplied excerpts and previous brief [brief-7]."
+              },
+              {
+                "type": "unsupported_owner",
+                "severity": "minor",
+                "description": "The C-09 record assigns Morgan as owner even though the supplied prior-brief excerpt does not name its owner. The personal-brief context makes Morgan plausible, but this should remain an inference rather than a sourced field.",
+                "sourceEvidence": "Commitment C-09, return a vendor call, first seen 1 Apr, due date unknown, status open.",
+                "outputEvidence": "Morgan, carried from [brief-7]."
+              }
+            ]
+          },
+          "output": "cases/01-leader-conflicting-commitment/original/answer.md",
+          "grading": "cases/01-leader-conflicting-commitment/original/grading.json"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "ic-stale-ci-and-duplicates",
+      "skill": "daily-debrief",
+      "conditions": {
+        "original": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 402,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/02-ic-stale-ci-and-duplicates/original/answer.md",
+          "grading": "cases/02-ic-stale-ci-and-duplicates/original/grading.json"
+        },
+        "revised": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 247,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/02-ic-stale-ci-and-duplicates/revised/answer.md",
+          "grading": "cases/02-ic-stale-ci-and-duplicates/revised/grading.json"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "catchup-partial-source-continuity",
+      "skill": "daily-debrief",
+      "conditions": {
+        "revised": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 664,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/03-catchup-partial-source-continuity/revised/answer.md",
+          "grading": "cases/03-catchup-partial-source-continuity/revised/grading.json"
+        },
+        "original": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 580,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/03-catchup-partial-source-continuity/original/answer.md",
+          "grading": "cases/03-catchup-partial-source-continuity/original/grading.json"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "leader-prep-versus-relationships",
+      "skill": "find-low-leverage-workflows",
+      "conditions": {
+        "original": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 525,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/04-leader-prep-versus-relationships/original/answer.md",
+          "grading": "cases/04-leader-prep-versus-relationships/original/grading.json"
+        },
+        "revised": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 393,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/04-leader-prep-versus-relationships/revised/answer.md",
+          "grading": "cases/04-leader-prep-versus-relationships/revised/grading.json"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "important-oneoffs-no-repetition",
+      "skill": "find-low-leverage-workflows",
+      "conditions": {
+        "original": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 193,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/05-important-oneoffs-no-repetition/original/answer.md",
+          "grading": "cases/05-important-oneoffs-no-repetition/original/grading.json"
+        },
+        "revised": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 125,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/05-important-oneoffs-no-repetition/revised/answer.md",
+          "grading": "cases/05-important-oneoffs-no-repetition/revised/grading.json"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "shared-support-growth-and-ownership",
+      "skill": "find-low-leverage-workflows",
+      "conditions": {
+        "revised": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 569,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/06-shared-support-growth-and-ownership/revised/answer.md",
+          "grading": "cases/06-shared-support-growth-and-ownership/revised/grading.json"
+        },
+        "original": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 777,
+          "factualReview": {
+            "passed": true,
+            "issues": []
+          },
+          "output": "cases/06-shared-support-growth-and-ownership/original/answer.md",
+          "grading": "cases/06-shared-support-growth-and-ownership/original/grading.json"
+        }
+      }
+    }
+  ],
+  "findings": [
+    "Revised answers met all 30 original task checks; these include overlapping checks from v1 and are retained as regression checks, not independent evidence of benefit.",
+    "Five of six revised answers were shorter. The case explicitly requesting a full continuity record was longer.",
+    "No factual errors were flagged in revised outputs by graders or coordinator; this limited review does not establish error-free performance.",
+    "Review still identified a detailed continuity record that could be easier to scan."
+  ],
+  "limitations": [
+    "Known cases used in development, not a held-out benchmark.",
+    "One fresh revised-skill execution per case; original outputs are historical.",
+    "No fresh no-skill baseline or model/version comparison.",
+    "Model-generated grading, coordinator AI review, no human scoring.",
+    "Exact backend model ID unavailable; no runtime/token/cost data.",
+    "Shorter answers do not establish saved human time, improved real-world outcomes or general skill superiority.",
+    "Original v1 study is unchanged; its limitations and factual findings still stand."
+  ],
+  "wordCountMethod": "Same regex word-like sequence method as v1, including source IDs and structured records; length rather than readability."
+}
