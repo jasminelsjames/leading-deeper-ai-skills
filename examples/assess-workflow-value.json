@@ -1,0 +1,69 @@
+{
+  "skillId": "assess-workflow-value",
+  "workflowId": "assess-workflow-value",
+  "notice": "All examples use invented sources and results. They are illustrations, not reports from Jasmine’s workplace or measured outcomes.",
+  "modelAgnosticNote": "Use the AI tool approved for your work with supplied material. Wording and layout will vary by model; look for the evidence, uncertainty and review decisions shown here. Connections and recurring runs depend on your setup.",
+  "goal": "Check the effort behind one workflow.",
+  "supplied": [
+    {
+      "label": "Comparable work | Fictional week",
+      "text": "Five completed drafts per approach, with the same acceptance requirements assumed. No failed or unfinished cases in this illustration. Effort is active person-minutes, not agent runtime or elapsed time."
+    },
+    {
+      "label": "Effort records | Invented measurements",
+      "text": "Manual work: 25 minutes per draft including preparation and checks, with zero separate baseline maintenance explicitly assumed. Assisted work: 7 minutes per draft including preparation, review and corrections, plus 10 minutes of maintenance for the week."
+    },
+    {
+      "label": "Unknowns and request",
+      "text": "Setup effort, monetary cost and use of attention are unknown. Equal quality is assumed for the example, not independently verified. Return a decision draft and one next measurement; make no workflow or staffing changes."
+    }
+  ],
+  "steps": [
+    {
+      "actor": "human",
+      "label": "Supply a fair comparison",
+      "description": "Name the completed task, period and quality requirements. Provide human effort for both approaches and label assumptions, estimates and missing values."
+    },
+    {
+      "actor": "ai",
+      "label": "Prepare a decision draft",
+      "description": "Explain what the effort comparison can establish, showing a traceable calculation. Separate the recurring difference from unknown setup, cost, quality and impact."
+    },
+    {
+      "actor": "human",
+      "label": "Choose the next measurement",
+      "description": "Check comparability and arithmetic, then decide whether the evidence supports keeping, revising or stopping. Unknown effort stays unknown rather than becoming zero."
+    }
+  ],
+  "output": {
+    "title": "Workflow assessment | Five comparable drafts",
+    "sections": [
+      {
+        "label": "Recurring human effort",
+        "text": "Manual: 125 active person-minutes. Assisted: 45 active person-minutes including maintenance. Difference: 80 minutes before setup. [Supplied fictional effort records]"
+      },
+      {
+        "label": "Quality and unknowns",
+        "text": "Equal acceptance requirements are assumed for the illustration, not independently validated evidence. Setup effort and monetary cost are unknown."
+      },
+      {
+        "label": "Recommendation",
+        "text": "Revise the assessment: collect setup effort and real comparable case measurements before claiming an all-in benefit."
+      },
+      {
+        "label": "Next evidence",
+        "text": "Have the workflow owner record active preparation, review, corrections and maintenance for the next comparable completed cases; retain failures and exclusions."
+      }
+    ]
+  },
+  "outputRequirements": [
+    "Comparable cases, units and a traceable calculation",
+    "Assumptions, missing evidence and setup treatment",
+    "Quality, monetary cost and use of attention kept distinct from effort",
+    "A reviewed keep, revise or stop proposal and one next measurement"
+  ],
+  "review": [
+    "Were the cases comparable, and did you count all human effort once, including unsuccessful attempts in your real comparison?",
+    "Do the known results support the decision, or do you first need setup, quality or other missing evidence?"
+  ]
+}

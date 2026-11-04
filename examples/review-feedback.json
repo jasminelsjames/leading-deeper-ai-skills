@@ -1,0 +1,69 @@
+{
+  "skillId": "review-feedback",
+  "workflowId": "support-improvement",
+  "notice": "All examples use invented sources and results. They are illustrations, not reports from Jasmine’s workplace or measured outcomes.",
+  "modelAgnosticNote": "Use the AI tool approved for your work with supplied material. Wording and layout will vary by model; look for the evidence, uncertainty and review decisions shown here. Connections and recurring runs depend on your setup.",
+  "goal": "Turn two questions into a proposed improvement.",
+  "supplied": [
+    {
+      "label": "[S1] Two selected fictional threads · 26–30 October 2026",
+      "text": "Thread A: a Harbor v2 owner asks, 'Which part of Settings contains Export?' Thread B: a Harbor v2 member asks, 'Why do I not see Export?' These are the only threads in the sample; no resolution evidence was supplied."
+    },
+    {
+      "label": "[S2] Current quick-start guide",
+      "text": "To download a CSV, export your project data from Settings."
+    },
+    {
+      "label": "[S3] Approved Harbor v2 product note and review scope",
+      "text": "Only project owners can create CSV exports: Project settings → Data → Export. Members do not see Export. A workspace administrator can identify an unknown project owner. Reviewer and publication owner: Lee. Compare an owner asking where to click, a member missing the action, and an unknown product version. For an unknown version, ask for the version rather than assuming these steps apply. No replay runner is available."
+    }
+  ],
+  "steps": [
+    {
+      "actor": "human",
+      "label": "Bound the evidence and decision",
+      "description": "Supply the selected threads, existing guide and approved product note. Name Lee as reviewer and ask for one proposed change, not publication."
+    },
+    {
+      "actor": "ai",
+      "label": "Connect the gap to a minimal patch",
+      "description": "Identify what the current guide omits, propose replacement wording supported by the product note, and prepare the representative comparison. Label it unrun because no replay runner is available."
+    },
+    {
+      "actor": "human",
+      "label": "Test before deciding",
+      "description": "Lee checks the evidence, runs the comparison with the actual answering setup, and approves, revises or rejects the wording before any shared guide changes."
+    }
+  ],
+  "output": {
+    "title": "Export guidance review item · unpublished draft",
+    "sections": [
+      {
+        "label": "Finding and evidence",
+        "text": "Both sampled threads concern locating or accessing Export [S1]. The current guide omits the owner-only restriction and exact navigation [S2], which are present in approved v2 guidance [S3]. This supports a targeted clarification in this sample; it does not establish the frequency of the gap across all support."
+      },
+      {
+        "label": "Proposed replacement",
+        "text": "For Harbor v2, only a project owner can create a CSV export. Owners open Project settings → Data → Export. Members do not see Export. If you do not know the project owner, ask your workspace administrator to help identify them. [S3] Update the existing quick-start entry rather than adding a second guide."
+      },
+      {
+        "label": "Comparison plan · not run",
+        "text": "Ask the same three questions with the current and proposed material: owner asking where to click → expect the exact path; member missing Export → expect the owner-only rule and administrator route; version unknown → expect a version question before v2 instructions. Record each actual answer, supporting reference and unsupported claim. No before/after result or pass is claimed. [S3]"
+      },
+      {
+        "label": "Recommendation and uncertainty",
+        "text": "Recommend review and comparison before a publication decision. The change is source-supported, but its effect on answers and later support questions is unmeasured. Lee owns approval, revision or rejection. No guidance has been published."
+      }
+    ]
+  },
+  "outputRequirements": [
+    "Finding and evidence",
+    "Proposed replacement",
+    "Comparison plan · not run",
+    "Recommendation and uncertainty"
+  ],
+  "review": [
+    "Is the current quick-start entry the right source to change, and does every proposed sentence follow the approved note?",
+    "Does the actual comparison preserve the unknown-version question and avoid unsupported permission advice?"
+  ]
+}

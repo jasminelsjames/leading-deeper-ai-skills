@@ -1,0 +1,69 @@
+{
+  "skillId": "find-low-leverage-workflows",
+  "workflowId": "choose-ai-assistance",
+  "notice": "All examples use invented sources and results. They are illustrations, not reports from Jasmine’s workplace or measured outcomes.",
+  "modelAgnosticNote": "Use the AI tool approved for your work with supplied material. Wording and layout will vary by model; look for the evidence, uncertainty and review decisions shown here. Connections and recurring runs depend on your setup.",
+  "goal": "Choose one step to improve with AI.",
+  "supplied": [
+    {
+      "label": "[A1] Fictional weekly status workflow",
+      "text": "Mira owns the weekly customer status report. Analyst Sam gathers dated ticket updates, groups them by customer, proposes an interpretation of risks, and reviews the report with Mira. Mira decides priorities and what to tell customers."
+    },
+    {
+      "label": "[A2] Intended improvement and growth to protect",
+      "text": "Sam wants less repeated copying and searching, but is learning to recognize delivery risks. Keep Sam's first interpretation and Mira's coaching discussion. The customer outcome to support is an accurate status report; there is no evidence yet that assistance improves it."
+    },
+    {
+      "label": "[A3] Baseline and available evidence",
+      "text": "For three comparable weekly reports, Sam recorded 18, 22 and 20 active minutes gathering updates. Review, correction and maintenance time were not measured. Approved excerpts can include ticket IDs, update dates and status text. No live connector access is needed for a first trial."
+    }
+  ],
+  "steps": [
+    {
+      "actor": "human",
+      "label": "Describe work and responsibility",
+      "description": "Supply the steps, people, intended outcome and baseline. Explicitly name the risk interpretation and coaching that should stay with Sam and Mira."
+    },
+    {
+      "actor": "ai",
+      "label": "Design a bounded experiment",
+      "description": "Assess each step separately. Propose assistance with collecting dated evidence, then define the owner, quality checks, measurement and stopping condition without assuming a time saving."
+    },
+    {
+      "actor": "human",
+      "label": "Decide whether to try it",
+      "description": "Mira and Sam review the plan. If they choose to run it, they measure human effort and corrections and review after two comparable reports; no workflow changes are made by this draft."
+    }
+  ],
+  "output": {
+    "title": "Two-report experiment proposal · draft",
+    "sections": [
+      {
+        "label": "One step to assist",
+        "text": "For the next two comparable reports, propose using AI to turn approved ticket excerpts into a draft table: customer, ticket ID, update date and stated status, with a reference for every row. Mark missing or conflicting updates for review. Mira owns the outcome; Sam prepares and checks the evidence table. [A1, A3]"
+      },
+      {
+        "label": "Responsibility and growth to protect",
+        "text": "Sam writes the first interpretation of risks before Mira's review. Mira retains prioritization and customer communication. Keep their coaching discussion. The proposed assistance covers evidence preparation, not those decisions. [A1, A2]"
+      },
+      {
+        "label": "Quality, effort and review point",
+        "text": "Sam checks every row against its excerpt and checks that all supplied tickets are represented. Record active preparation, review, correction and maintenance minutes for both trial reports. The supplied gathering baseline averages 20 minutes across three reports; total baseline human effort is unknown. Compare like-for-like gathering separately, and do not declare an overall saving from that number alone. [A3] Review after the second report."
+      },
+      {
+        "label": "Stop or revise condition",
+        "text": "Stop using the draft table if it invents a status or source; revise the scope if checking it displaces Sam's risk practice or coaching. These are proposed conditions, not observed failures. Whether assistance improves report accuracy or reduces total effort remains unknown. No automation has been started."
+      }
+    ]
+  },
+  "outputRequirements": [
+    "One step to assist",
+    "Responsibility and growth to protect",
+    "Quality, effort and review point",
+    "Stop or revise condition"
+  ],
+  "review": [
+    "Does this help Sam with repetition while preserving risk interpretation, coaching and Mira's ownership?",
+    "Are the two-report scope, source checks and stopping conditions clear enough to assess before continuing?"
+  ]
+}

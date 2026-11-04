@@ -1,0 +1,64 @@
+{
+  "skillId": "delegate-reviewable-work",
+  "workflowId": "bounded-agent-work",
+  "notice": "All examples use invented sources and results. They are illustrations, not reports from Jasmine’s workplace or measured outcomes.",
+  "modelAgnosticNote": "Use the AI tool approved for your work with supplied material. Wording and layout will vary by model; look for the evidence, uncertainty and review decisions shown here. Connections and recurring runs depend on your setup.",
+  "goal": "Turn a small task into a reviewable change.",
+  "supplied": [
+    {
+      "label": "[B1] Task and boundaries",
+      "text": "Draft a replacement for the registration answer in our fictional workshop FAQ. Add the approved closing time and what happens after it. Preserve the booking link and cancellation rule. Return the text here; do not edit a file or publish. Acceptance: include the timezone, keep the existing cancellation rule, and do not invent a waitlist. Event owner: Jo."
+    },
+    {
+      "label": "[B2] Current FAQ · registration answer",
+      "text": "Book at example.org/workshop. Cancel your booking at least 24 hours before the workshop."
+    },
+    {
+      "label": "[B3] Approved event note · 2 November 2026",
+      "text": "Registration closes on 12 November 2026 at 17:00 Europe/Berlin. After that time, direct registration questions to the event owner. No waitlist process has been agreed."
+    }
+  ],
+  "steps": [
+    {
+      "actor": "human",
+      "label": "Give the task a clear finish",
+      "description": "Paste the task, existing answer and approved note. Say that the result should be replacement text in the chat, with no file changes."
+    },
+    {
+      "actor": "ai",
+      "label": "Produce the change and check its scope",
+      "description": "Compare the existing answer with the approved note, draft the replacement, and show which acceptance requirements it satisfies. Keep undecided policy visible."
+    },
+    {
+      "actor": "human",
+      "label": "Inspect before accepting",
+      "description": "Read the proposed text against both sources. Jo decides whether it is ready to apply and publish; the draft itself changes nothing."
+    }
+  ],
+  "output": {
+    "title": "Proposed FAQ replacement · draft",
+    "sections": [
+      {
+        "label": "Replacement answer",
+        "text": "Book at example.org/workshop. Registration closes on 12 November 2026 at 17:00 Europe/Berlin. After that time, direct registration questions to Jo, the event owner. Cancel your booking at least 24 hours before the workshop. [B1–B3]"
+      },
+      {
+        "label": "Acceptance check",
+        "text": "The proposed text includes the approved date, time and timezone [B3], retains the booking link and cancellation rule [B2], and adds no waitlist promise [B1, B3]. This is a comparison of the supplied text, not a test of a live website."
+      },
+      {
+        "label": "Decision and stopping point",
+        "text": "Jo should confirm that the event-owner contact route is useful to readers. A contact address was not supplied. No files were changed and nothing was published."
+      }
+    ]
+  },
+  "outputRequirements": [
+    "Replacement answer",
+    "Acceptance check",
+    "Decision and stopping point"
+  ],
+  "review": [
+    "Does every changed detail match the approved note, with the original booking and cancellation details intact?",
+    "Is the contact route usable before the owner applies the draft?"
+  ]
+}

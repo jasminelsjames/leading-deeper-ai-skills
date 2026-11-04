@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-04",
+  "license": "MIT",
+  "repository": "https://github.com/jasminelsjames/leading-deeper-ai-skills",
+  "skills": [
+    {
+      "id": "find-low-leverage-workflows",
+      "title": "Find low-leverage workflows",
+      "summary": "Choose one recurring burden to improve with AI while protecting judgment and useful practice.",
+      "updated": "2026-11-04",
+      "sourcePath": "skills/find-low-leverage-workflows/SKILL.md",
+      "publicPath": "leading-deeper/skills/find-low-leverage-workflows/SKILL.md",
+      "htmlPath": "/leading-deeper/choose-ai-assistance#agent-skill",
+      "companionWorkflowId": "choose-ai-assistance",
+      "toolingSummary": "Works with supplied examples. Slack or Teams, issue trackers, repositories and document connectors are optional when the chosen context needs them.",
+      "executionScope": "Identify opportunities and propose a reviewed experiment; installing or reading the skill does not grant tool access or authorize external changes.",
+      "requestAction": "help me apply the AI Leverage Framework",
+      "requestContext": "Recurring task: [what happens and how often]\nCurrent steps: [how you do it today]\nPeople: [who does it and who owns the outcome]\nKeep human: [judgment, relationships or learning to protect]\nTime and example: [if available]\n\nStart with my recent work. Identify repeated steps I could improve, what judgment or learning to protect and one small experiment to try. Work from the examples I provide or read access I authorize. Propose what to make room for and how to assess whether the experiment helped.",
+      "talkTitle": "Choose Where Attention Belongs",
+      "firstUse": {
+        "result": "One repeated task to improve, with a small AI experiment to try.",
+        "context": [
+          "One recurring task and its current steps.",
+          "Who does the work and who owns the outcome.",
+          "Human judgment or useful practice to protect.",
+          "Time spent and a recent example, if available."
+        ],
+        "checks": [
+          "Protect the person’s ownership and learning.",
+          "Agree on success checks and a stopping point."
+        ]
+      },
+      "examplePath": "examples/find-low-leverage-workflows.json"
+    },
+    {
+      "id": "daily-debrief",
+      "title": "Daily debrief and follow-through",
+      "summary": "See what needs your attention without piecing your day together again. Get a private brief with sources and commitments to check.",
+      "updated": "2026-11-04",
+      "sourcePath": "skills/daily-debrief/SKILL.md",
+      "publicPath": "leading-deeper/skills/daily-debrief/SKILL.md",
+      "htmlPath": "/leading-deeper/daily-debrief#agent-skill",
+      "companionWorkflowId": "daily-debrief",
+      "toolingSummary": "Start with approved excerpts. For connected use, choose only the email, chat, documents, comments or delivery records relevant to your focus.",
+      "executionScope": "Prepare a private reviewable brief. Reading the skill does not authorize sending follow-ups, changing tasks or creating a recurring schedule.",
+      "requestAction": "prepare my daily debrief",
+      "requestContext": "Me: [name or handle]. Work focus: [leader, individual contributor or mixed]. Ask if my identity, focus, timezone, day or source scope is unclear. Use supplied material or scoped read access I authorize. A previous brief is optional. Compare commitments with observed evidence and return a private Tonight, Tomorrow and Tracking draft. Keep uncertainty visible. Do not send messages, change tasks or create a schedule.",
+      "talkTitle": "Daily Debrief",
+      "firstUse": {
+        "result": "A sourced action list for Tonight, Tomorrow and Tracking.",
+        "context": [
+          "Your name, the day and your timezone.",
+          "Calendar entries, meeting notes and messages from that day.",
+          "Your previous debrief, if you have one."
+        ],
+        "checks": [
+          "Confirm commitments against their sources.",
+          "Choose your priorities; the agent sends nothing."
+        ]
+      },
+      "examplePath": "examples/daily-debrief.json"
+    },
+    {
+      "id": "review-feedback",
+      "title": "Review feedback and propose improvements",
+      "summary": "Reduce repeated confusion by turning feedback into proposed fixes to content or guidance. You review what changes.",
+      "updated": "2026-11-04",
+      "sourcePath": "skills/review-feedback/SKILL.md",
+      "publicPath": "leading-deeper/skills/review-feedback/SKILL.md",
+      "htmlPath": "/leading-deeper/support-improvement#agent-skill",
+      "companionWorkflowId": "support-improvement",
+      "toolingSummary": "Use selected feedback, current guidance and criteria. Slack or Teams, document or repository read tools are optional; a replay runner is needed only to claim an executed comparison.",
+      "executionScope": "Return a reviewable proposal and actual comparisons or an unrun plan. Publishing, messaging and scheduling require separate authorization.",
+      "requestAction": "review selected feedback and propose an improvement",
+      "requestContext": "Feedback: [dated excerpts and source labels]\nCurrent guidance: [the content or answer to check]\nCriteria: [what a good result must satisfy]\nFocus: [one issue to investigate]\n\nUse the feedback, sources and criteria I provide, or scoped read access I authorize. Keep observations separate from AI assessments. Return the finding, a proposed correction and the evidence a person needs to decide. Do not publish the change.",
+      "talkTitle": "Review feedback and propose improvements",
+      "firstUse": {
+        "result": "A proposed fix, with the feedback and evidence behind it.",
+        "context": [
+          "Feedback or support threads with dates and source labels.",
+          "The current answer, content or guidance.",
+          "Criteria for judging it and one change to investigate."
+        ],
+        "checks": [
+          "Verify the finding against the source.",
+          "Approve, revise or reject the proposed change."
+        ]
+      },
+      "examplePath": "examples/review-feedback.json"
+    },
+    {
+      "id": "build-reusable-context",
+      "title": "Build reusable context",
+      "summary": "Help the next person answer questions without reconstructing the same history. Get a starting point with sources and visible gaps.",
+      "updated": "2026-11-04",
+      "sourcePath": "skills/build-reusable-context/SKILL.md",
+      "publicPath": "leading-deeper/skills/build-reusable-context/SKILL.md",
+      "htmlPath": "/leading-deeper/knowledge-foundation#agent-skill",
+      "companionWorkflowId": "knowledge-foundation",
+      "toolingSummary": "Use approved documents, code and conversations or supplied excerpts. Repository, document and Slack or Teams read tools are optional when the context needs them.",
+      "executionScope": "Prepare a draft with sources and gaps. Reading this skill does not authorize publishing documentation or changing shared sources.",
+      "requestAction": "build a reusable knowledge starting point",
+      "requestContext": "Reader: [who needs this]\nQuestions: [what they need to understand]\nSources: [approved excerpts with dates and references]\nScope: [what to include or leave out]\n\nAsk which questions the next reader needs to answer. Use the material I provide or scoped read access I authorize. Return referenced explanations, an entry point and gaps to review. Keep uncertain claims visible and return a draft.",
+      "talkTitle": "Build reusable context",
+      "firstUse": {
+        "result": "A knowledge starting point with sources and unanswered questions.",
+        "context": [
+          "The questions the next reader needs to answer.",
+          "Relevant documents, code or conversations with source labels.",
+          "The intended reader and any scope limits."
+        ],
+        "checks": [
+          "Check important claims and conflicting sources.",
+          "Resolve gaps before publishing shared guidance."
+        ]
+      },
+      "examplePath": "examples/build-reusable-context.json"
+    },
+    {
+      "id": "delegate-reviewable-work",
+      "title": "Delegate work you can review",
+      "summary": "Hand over a defined task and get a result you can inspect, with clear checks and a stopping point.",
+      "updated": "2026-11-04",
+      "sourcePath": "skills/delegate-reviewable-work/SKILL.md",
+      "publicPath": "leading-deeper/skills/delegate-reviewable-work/SKILL.md",
+      "htmlPath": "/leading-deeper/bounded-agent-work#agent-skill",
+      "companionWorkflowId": "bounded-agent-work",
+      "toolingSummary": "Supplied context is enough for a brief. Implementation needs an authorized working area and relevant checks; remote repository or document access is optional.",
+      "executionScope": "Follow the actual request for planning or execution. A skill is not permission to write, create a remote review, merge, deploy or run without a stopping point.",
+      "requestAction": "prepare or carry out work I can review",
+      "requestContext": "Goal: [the outcome]\nCurrent material: [approved context or working area]\nBoundaries: [allowed changes and constraints]\nAcceptance: [how to check the result]\nStop after: [brief, draft or another explicit stopping point]\n\nStart from my goal and establish the scope, constraints, acceptance checks and stopping point. If I request a brief, return the brief. If I request execution, use only the working area and actions I authorize. Return an inspectable result and actual checks.",
+      "talkTitle": "Delegate work you can review",
+      "firstUse": {
+        "result": "A task brief or reviewable result, with clear checks and a stopping point.",
+        "context": [
+          "The outcome you want and the current material.",
+          "What may change and what must stay unchanged.",
+          "Acceptance checks and where the agent should stop."
+        ],
+        "checks": [
+          "Confirm the scope and acceptance checks.",
+          "Review evidence before accepting any completed work."
+        ]
+      },
+      "examplePath": "examples/delegate-reviewable-work.json"
+    },
+    {
+      "id": "assess-workflow-value",
+      "title": "Check whether the automation is helping",
+      "summary": "Check whether the workflow reduces human effort after review, correction and maintenance, then decide whether to keep, revise or stop it.",
+      "updated": "2026-11-04",
+      "sourcePath": "skills/assess-workflow-value/SKILL.md",
+      "publicPath": "leading-deeper/skills/assess-workflow-value/SKILL.md",
+      "htmlPath": "/leading-deeper/assess-workflow-value#agent-skill",
+      "companionWorkflowId": "assess-workflow-value",
+      "toolingSummary": "Works with supplied measurements. Reporting, issue, timing-log or file read tools are optional; no live connector is required.",
+      "executionScope": "Assess the evidence and propose the next measurement. This skill does not change workflows, assign people or create tracking.",
+      "requestAction": "assess whether one workflow is helping",
+      "requestContext": "Task and period: [what you compared]\nCases: [comparable completed work, including failures]\nHuman effort: [preparation, review, corrections and upkeep]\nQuality and setup: [measured results and costs]\nUnknowns: [anything not measured]\n\nUse comparable cases and the measurements I provide. Include human preparation, review, correction and maintenance. Keep unknowns and setup costs visible. Separate effort from quality, cost and what the attention enabled. Return a decision draft and one next measurement.",
+      "talkTitle": "Check whether the automation is helping",
+      "firstUse": {
+        "result": "An effort comparison and a keep, revise or stop recommendation.",
+        "context": [
+          "The task, time period and comparable completed cases.",
+          "Human preparation, review, correction and maintenance time.",
+          "Quality checks, setup costs and anything not measured."
+        ],
+        "checks": [
+          "Check comparable cases and arithmetic.",
+          "Keep unknowns visible before claiming a saving."
+        ]
+      },
+      "examplePath": "examples/assess-workflow-value.json"
+    }
+  ]
+}

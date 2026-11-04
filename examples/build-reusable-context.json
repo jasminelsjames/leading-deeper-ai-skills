@@ -1,0 +1,69 @@
+{
+  "skillId": "build-reusable-context",
+  "workflowId": "knowledge-foundation",
+  "notice": "All examples use invented sources and results. They are illustrations, not reports from Jasmine’s workplace or measured outcomes.",
+  "modelAgnosticNote": "Use the AI tool approved for your work with supplied material. Wording and layout will vary by model; look for the evidence, uncertainty and review decisions shown here. Connections and recurring runs depend on your setup.",
+  "goal": "Build a starting point for the next colleague.",
+  "supplied": [
+    {
+      "label": "[K1] Digest README · revision 4",
+      "text": "The team digest collects items marked ready in the queue and sends one email to the subscribed team. Ask: when is the digest scheduled, and where should I begin if someone reports a missing email? The operations team owns investigations."
+    },
+    {
+      "label": "[K2] Supplied config and runbook excerpt · current repository snapshot",
+      "text": "digest.schedule: weekdays at 09:00 UTC. Runbook: for a missing email, inspect the run record for the relevant date and its delivery result. A successful job run alone does not establish that a recipient received the email."
+    },
+    {
+      "label": "[K3] Onboarding notes · revision 1",
+      "text": "The digest goes out at 10:00 UTC on weekdays. The deployment schedule and recipient delivery records are not included in this source pack."
+    }
+  ],
+  "steps": [
+    {
+      "actor": "human",
+      "label": "Choose the reader's questions",
+      "description": "Supply the three excerpts and ask for an entry point covering scheduling and missing-email investigations. Keep the source labels and versions attached."
+    },
+    {
+      "actor": "ai",
+      "label": "Build a referenced map",
+      "description": "Explain the supported flow, answer each question with references, and expose the schedule conflict and missing deployment evidence. Do not fill the gaps with assumed behavior."
+    },
+    {
+      "actor": "human",
+      "label": "Resolve the consequential gap",
+      "description": "An operations reviewer checks the deployed schedule and the referenced runbook before deciding what should become shared documentation."
+    }
+  ],
+  "output": {
+    "title": "Team digest starting point · draft",
+    "sections": [
+      {
+        "label": "System overview",
+        "text": "Ready queue items → digest job → email to the subscribed team. Operations owns investigations. This is the flow described by the supplied README, not a verified account of a live run. [K1]"
+      },
+      {
+        "label": "When does it run?",
+        "text": "The current repository excerpt configures weekdays at 09:00 UTC [K2]. Older onboarding notes say 10:00 UTC [K3]. Treat this as a source conflict: the actual deployed schedule has not been established."
+      },
+      {
+        "label": "Where do I start with a missing email?",
+        "text": "Inspect the relevant dated run record and its delivery result. Do not equate a successful run with recipient receipt. [K2] No run or delivery records were supplied, so this draft cannot diagnose a specific missing email. [K3]"
+      },
+      {
+        "label": "Gaps and proposed entry point",
+        "text": "First resolve the deployed schedule before a colleague relies on a send time. Then add links to the run records and delivery evidence. Proposed documentation outline: purpose and owner; verified schedule; missing-email investigation; source versions and open questions. No shared source has been updated."
+      }
+    ]
+  },
+  "outputRequirements": [
+    "System overview",
+    "When does it run?",
+    "Where do I start with a missing email?",
+    "Gaps and proposed entry point"
+  ],
+  "review": [
+    "Can the reviewer follow every reference and verify which schedule is deployed?",
+    "Could a new colleague find the next investigation step without reading an unsupported diagnosis?"
+  ]
+}

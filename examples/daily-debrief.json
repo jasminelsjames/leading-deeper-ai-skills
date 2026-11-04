@@ -1,0 +1,100 @@
+{
+  "skillId": "daily-debrief",
+  "workflowId": "daily-debrief",
+  "notice": "All examples use invented sources and results. They are illustrations, not reports from Jasmine’s workplace or measured outcomes.",
+  "modelAgnosticNote": "Use the AI tool approved for your work with supplied material. Wording and layout will vary by model; look for the evidence, uncertainty and review decisions shown here. Connections and recurring runs depend on your setup.",
+  "goal": "Tonight. Tomorrow. Tracking.",
+  "supplied": [
+    {
+      "label": "One day",
+      "text": "8 April 2030 · Europe/Berlin. Calendar, note, two threads + previous brief; no email or tracker."
+    },
+    {
+      "label": "Earlier commitments",
+      "text": "Morgan: post checklist before Wednesday. Avery: check dependencies, no due date. [Previous brief + msg-21, 7 April]"
+    },
+    {
+      "label": "Today’s updates",
+      "text": "14:10: checklist posted [msg-44]. Thursday review proposed, unconfirmed [note-12]. No new Avery update. [8 April]"
+    }
+  ],
+  "steps": [
+    {
+      "actor": "human",
+      "label": "Choose the sources",
+      "description": "Give your agent one day of calendar, notes and messages, your timezone and the previous brief."
+    },
+    {
+      "actor": "ai",
+      "label": "Draft the action list",
+      "description": "Compare commitments with new evidence. Propose Tonight, Tomorrow and Tracking items, each with a source."
+    },
+    {
+      "actor": "human",
+      "label": "Choose what to act on",
+      "description": "Check the evidence and adjust priorities. A missing update means unknown progress, not overdue work."
+    }
+  ],
+  "output": {
+    "title": "Daily debrief | 8 April 2030",
+    "attentionGroups": [
+      {
+        "color": "red",
+        "label": "Tonight",
+        "items": [],
+        "empty": "Nothing in the supplied sources needs action tonight."
+      },
+      {
+        "color": "yellow",
+        "label": "Tomorrow",
+        "items": [
+          {
+            "title": "Review Morgan’s rollout checklist",
+            "whyNow": "Suggested next step. The checklist was posted; your review is still a decision.",
+            "source": "msg-44 · 8 April, 14:10; previous brief"
+          }
+        ]
+      },
+      {
+        "color": "green",
+        "label": "Tracking",
+        "meaning": "Keep visible; this does not mean done.",
+        "items": [
+          {
+            "title": "Confirm the review date",
+            "whyNow": "The date change is proposed, not confirmed.",
+            "source": "note-12 · 8 April"
+          },
+          {
+            "title": "Track Avery’s dependency check",
+            "whyNow": "No new update; progress is unknown and no due date was stated.",
+            "source": "Previous brief + msg-21 · 7 April; no new supporting record"
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "label": "Red / Tonight (0)",
+        "text": "Nothing in the supplied sources needs action tonight."
+      },
+      {
+        "label": "Yellow / Tomorrow (1)",
+        "text": "Review Morgan’s rollout checklist. Suggested next step. The checklist was posted; your review is still a decision. [Source: msg-44 · 8 April, 14:10; previous brief]"
+      },
+      {
+        "label": "Green / Tracking (2)",
+        "text": "Keep visible; this does not mean done. Confirm the review date. The date change is proposed, not confirmed. [Source: note-12 · 8 April] Track Avery’s dependency check. No new update; progress is unknown and no due date was stated. [Source: Previous brief + msg-21 · 7 April; no new supporting record]"
+      }
+    ]
+  },
+  "outputRequirements": [
+    "Red: Tonight, with only supported needs before signing off",
+    "Yellow: Tomorrow, with proposed next actions",
+    "Green: Tracking, including open questions and unknown progress, not a completed-work status",
+    "Source references and coverage limits; no message or task changes without your instruction"
+  ],
+  "review": [
+    "Check each source before acting. AI proposes the timing; you choose the priorities."
+  ]
+}
