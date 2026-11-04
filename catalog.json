@@ -7,7 +7,7 @@
     {
       "id": "find-low-leverage-workflows",
       "title": "Find low-leverage workflows",
-      "summary": "Choose one recurring burden to improve with AI while protecting judgment and useful practice.",
+      "summary": "Break repeated work into steps and choose one small AI experiment. Keep useful learning and ownership visible.",
       "updated": "2026-11-04",
       "sourcePath": "skills/find-low-leverage-workflows/SKILL.md",
       "publicPath": "leading-deeper/skills/find-low-leverage-workflows/SKILL.md",
@@ -27,7 +27,7 @@
           "Time spent and a recent example, if available."
         ],
         "checks": [
-          "Protect the person’s ownership and learning.",
+          "Protect the person\u2019s ownership and learning.",
           "Agree on success checks and a stopping point."
         ]
       },
@@ -36,7 +36,7 @@
     {
       "id": "daily-debrief",
       "title": "Daily debrief and follow-through",
-      "summary": "See what needs your attention without piecing your day together again. Get a private brief with sources and commitments to check.",
+      "summary": "Turn scattered notes and messages into an action list that checks earlier commitments and links back to evidence.",
       "updated": "2026-11-04",
       "sourcePath": "skills/daily-debrief/SKILL.md",
       "publicPath": "leading-deeper/skills/daily-debrief/SKILL.md",
@@ -64,7 +64,7 @@
     {
       "id": "review-feedback",
       "title": "Review feedback and propose improvements",
-      "summary": "Reduce repeated confusion by turning feedback into proposed fixes to content or guidance. You review what changes.",
+      "summary": "Turn recurring feedback into a proposed correction, with evidence and a way to check it.",
       "updated": "2026-11-04",
       "sourcePath": "skills/review-feedback/SKILL.md",
       "publicPath": "leading-deeper/skills/review-feedback/SKILL.md",
@@ -92,7 +92,7 @@
     {
       "id": "build-reusable-context",
       "title": "Build reusable context",
-      "summary": "Help the next person answer questions without reconstructing the same history. Get a starting point with sources and visible gaps.",
+      "summary": "Put answers, sources and open questions in one starting point the next person or agent can reuse.",
       "updated": "2026-11-04",
       "sourcePath": "skills/build-reusable-context/SKILL.md",
       "publicPath": "leading-deeper/skills/build-reusable-context/SKILL.md",
@@ -120,7 +120,7 @@
     {
       "id": "delegate-reviewable-work",
       "title": "Delegate work you can review",
-      "summary": "Hand over a defined task and get a result you can inspect, with clear checks and a stopping point.",
+      "summary": "Define the result, boundaries and acceptance checks before work starts. Get a result you can inspect.",
       "updated": "2026-11-04",
       "sourcePath": "skills/delegate-reviewable-work/SKILL.md",
       "publicPath": "leading-deeper/skills/delegate-reviewable-work/SKILL.md",
@@ -148,7 +148,7 @@
     {
       "id": "assess-workflow-value",
       "title": "Check whether the automation is helping",
-      "summary": "Check whether the workflow reduces human effort after review, correction and maintenance, then decide whether to keep, revise or stop it.",
+      "summary": "Compare preparation, review, corrections and upkeep before deciding whether to keep an automation.",
       "updated": "2026-11-04",
       "sourcePath": "skills/assess-workflow-value/SKILL.md",
       "publicPath": "leading-deeper/skills/assess-workflow-value/SKILL.md",

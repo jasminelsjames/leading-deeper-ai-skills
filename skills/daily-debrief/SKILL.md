@@ -51,20 +51,19 @@ For each carried commitment, preserve a stable identifier, statement, first seen
 
 When a prior successful boundary is available, use it to catch up through the current cutoff, including missed days. State the interval convention and timezone. Deduplicate by source identifiers and commitment identifiers, reconcile updated threads, and reuse the existing commitment rather than creating a copy on every run. Keep coverage boundaries per source so a failed or partial source leaves a visible gap to retry. A retry over the same interval must not duplicate commitments or silently replace their history.
 
-Save a brief or advance a successful coverage boundary only to a private destination the user has authorized. Advance a source boundary only after its agreed retrieval is complete and the output has been saved successfully; record attempted coverage and unresolved gaps separately. Without write authorization, return the draft and proposed state update in the current response. Do not create storage, publish a brief or connect another service as a side effect.
+Save a brief or advance a successful coverage boundary only to a private destination the user has authorized. Advance a source boundary only after its agreed retrieval is complete and the output has been saved successfully; record attempted coverage and unresolved gaps separately. Without write authorization, return the draft here and show any proposed changes to commitments or coverage as unapplied. Do not imply that the record was saved. Do not create storage, publish a brief or connect another service as a side effect.
 
-## Return a reviewable brief
+## Return a brief the user can act on
 
-Keep the main brief short, with source details and the commitment record separate when useful:
+Lead with decisions and follow through. The default brief should contain:
 
-1. **Scope and coverage:** reporting interval, timezone, sources actually read, retrieval limits and missing periods.
-2. **Day summary:** outcomes, decisions and relevant changes supported by evidence, with inferences labeled.
-3. **Proposed attention:** Tonight, Tomorrow and Tracking, or the user's equivalent. Label these as suggestions, distinguish stated deadlines from inferred urgency and keep priority, ownership and response decisions with the user.
-4. **Commitment comparison:** what the last brief said, what was observed now, what changed and what remains unknown.
-5. **Carried commitments:** the continuity fields above, with evidence for status changes and unresolved uncertainty.
-6. **Limits and decisions:** missing evidence, conflicts and any question that needs the user's judgment.
+* A scope line with the date or catchup period, timezone and material coverage gaps. Supplied excerpts are partial evidence. Omit a source inventory or excerpt count unless useful; verify any count you report.
+* **Tonight, Tomorrow and Tracking**, or the user's equivalent: concrete suggested actions with evidence, supported owners and stated deadlines. Separate requests from commitments and inferred urgency from deadlines. Do not add urgency or actions to fill a section; say when nothing needs attention tonight.
+* Meaningful changes: outcomes, decisions, completed commitments and unresolved conflicts. Put these beside the relevant attention item where possible, rather than repeating them in a separate summary.
 
-Do not infer time saved from message counts, calendar duration or agent runtime. If the user wants to measure value, compare a defined baseline with actual preparation and review effort and note coverage or quality changes.
+Preserve source references and decision-relevant uncertainty in the brief. Surface unchanged commitments when they need attention; do not print the entire ledger by default. Maintain the full history and per-source coverage in an authorized private record. For a draft-only response, show relevant proposed changes as unapplied. If the user asks for a continuity record, coverage audit or full comparison, include the requested fields and boundaries, even when longer.
+
+Do not infer time saved from message counts, calendar duration or agent runtime. If requested, compare a defined baseline with actual preparation and review effort and note coverage or quality changes.
 
 ## Stop at the brief
 

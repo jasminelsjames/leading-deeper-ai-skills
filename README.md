@@ -1,8 +1,10 @@
 # Leading Deeper AI skills
 
-Spend less time reconstructing work. Get results you can inspect before acting.
+Give your agent a process you can reuse for recurring work.
 
 Start with **[Daily Debrief](skills/daily-debrief/SKILL.md)** for a sourced action list, or **[Choose Where Attention Belongs](skills/find-low-leverage-workflows/SKILL.md)** to pick one repeated task to improve.
+
+These skills capture a process you can reuse: what your agent should read, what it should return and what you need to check. Supply fresh context each time instead of rebuilding the instructions. You keep the decisions.
 
 ## Use a skill
 
@@ -38,9 +40,9 @@ I choose the priorities. Do not send messages or change tasks.
 
 [Read the first evaluation](evals/2026-11-04-starters-v1/README.md): two starter skills, six fictional cases, and the actual answers with and without each skill. Results include longer answers and an error found outside the grading checks. This is an initial AI-graded comparison, not a productivity benchmark.
 
-## Tried a skill?
+## Was the result useful?
 
-Did it work? [Share feedback](https://github.com/jasminelsjames/leading-deeper-ai-skills/issues/new) with what you expected, what happened and what would make the result more useful. Use fictional or sanitized examples.
+[Share feedback](https://github.com/jasminelsjames/leading-deeper-ai-skills/issues/new): what you used, what you had to correct and what would make the next run better. Use fictional or sanitized examples.
 
 Have an improvement? [Open a PR](CONTRIBUTING.md) with the problem, your change and an example showing its effect. Run `python3 scripts/validate_repository.py` before submitting. Maintainers review changes before the website imports an approved version.
 
