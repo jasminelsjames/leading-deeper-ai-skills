@@ -1,0 +1,9 @@
+Help me choose one repeated activity to improve with AI. I am a team leader. I want more room to coach people rather than keep reconstructing weekly status. Use only these examples and recommend a first experiment; do not build or deploy anything.
+
+My week:
+- Every Friday I gather the same five project status excerpts and turn them into a stakeholder update. Across the last four Fridays the gathering and first draft took me 40, 35, 45 and 40 active minutes; I have not measured review or maintenance time.
+- Afterwards I talk with two stakeholders about conflicting priorities. Those conversations often change the plan and cannot be replaced by sending a draft.
+- Priya, a new engineer, writes an incident summary with a mentor once a fortnight to learn diagnosis and ownership. It takes her two hours, but she explicitly values the practice.
+- The team owns a cross-team migration; I support the owner, but I should not take their delivery decisions away.
+
+All five status excerpts can be pasted into an agent. No connected tools are available. I own the stakeholder communication; an engineer can check technical factual details before I send it. I have not provided evidence of any automated workflow’s performance.

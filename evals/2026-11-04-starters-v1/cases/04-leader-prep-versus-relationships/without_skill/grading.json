@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Separates repeated status gathering/drafting from stakeholder negotiation and plan decisions, keeping the latter human-led.",
+      "passed": true,
+      "evidence": "Selects \"preparing the Friday stakeholder update from the five project excerpts\" and explicitly keeps \"the stakeholder conversations: resolving conflicting priorities and changing the plan are leadership work.\""
+    },
+    {
+      "text": "Preserves Priya’s valuable diagnostic practice and the migration owner’s delivery responsibility.",
+      "passed": true,
+      "evidence": "\"Preserve Priya’s mentored incident summaries because she values the learning, and leave migration delivery decisions with the project owner.\""
+    },
+    {
+      "text": "Uses the supplied baseline as about 40 active minutes weekly, or the exact four observations; does not invent saved hours or measured assisted performance.",
+      "passed": true,
+      "evidence": "\"Your recorded gathering and first-draft time averages 40 active minutes, with a range of 35–45 minutes\" and \"it does not yet establish potential net savings, because review and maintenance time are unmeasured.\" These match the supplied data and do not claim assisted performance."
+    },
+    {
+      "text": "Chooses one feasible trial from pasted status excerpts with clear AI output, leader ownership, technical review and a condition to stop or revise.",
+      "passed": true,
+      "evidence": "\"Gather and paste the five excerpts yourself, labeled by project\" leads to an AI draft. \"Have the engineer check technical facts; you check meaning, emphasis, commitments, and audience fit.\" Its continuation condition is \"only if the assisted runs reduce total work while preserving factual quality and your ownership of the message.\""
+    },
+    {
+      "text": "Proposes comparing actual manual and assisted effort including review or maintenance plus quality/rework, tied to more room for coaching rather than automatic extra work.",
+      "passed": true,
+      "evidence": "Asks for a \"complete normal run\" and assisted totals including \"the engineer’s check, and any prompt upkeep,\" plus \"factual errors, omissions, unsupported commitments.\" It says \"If the experiment frees time, reserve that time for coaching.\""
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria are substantively supported. The proposal distinguishes the historical drafting baseline from a newly measured complete-process baseline.",
+    "380 words. Detail is proportionate to the requested first experiment. No implementation or claimed savings are present."
+  ]
+}

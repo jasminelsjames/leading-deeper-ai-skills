@@ -1,0 +1,62 @@
+{
+  "registeredAt": "2026-11-04T19:34:15.020125+00:00",
+  "purpose": "Initial small behavioral comparison of two starter skills",
+  "cases": [
+    {
+      "id": 1,
+      "name": "leader-conflicting-commitment",
+      "skill": "daily-debrief",
+      "expected": "Evidence-grounded leader brief that distinguishes an unverified AI note from Morgan\u2019s actual commitment and reconciles prior work."
+    },
+    {
+      "id": 2,
+      "name": "ic-stale-ci-and-duplicates",
+      "skill": "daily-debrief",
+      "expected": "IC brief preserving commit-specific CI uncertainty, deduplicated review request and actual ownership."
+    },
+    {
+      "id": 3,
+      "name": "catchup-partial-source-continuity",
+      "skill": "daily-debrief",
+      "expected": "Catchup output keeps stable commitment IDs/history, visible source gaps and no fictional coverage or completion."
+    },
+    {
+      "id": 4,
+      "name": "leader-prep-versus-relationships",
+      "skill": "find-low-leverage-workflows",
+      "expected": "Split preparation from judgment, protect junior practice, select a small checked trial with measured baseline and no invented savings."
+    },
+    {
+      "id": 5,
+      "name": "important-oneoffs-no-repetition",
+      "skill": "find-low-leverage-workflows",
+      "expected": "Avoid force-fitting important one-offs into low leverage; request just enough recurring-work evidence, no fake ROI or mandatory connectors."
+    },
+    {
+      "id": 6,
+      "name": "shared-support-growth-and-ownership",
+      "skill": "find-low-leverage-workflows",
+      "expected": "Pick support retrieval/drafting trial using supplied files, retain process owner and diagnostic learning, define quality/effort measures without invented hours."
+    }
+  ],
+  "sourceCommit": "c84292ad2f7c2d1411833ca0c26ed464b5af35e4",
+  "configurations": [
+    "with_skill",
+    "without_skill"
+  ],
+  "runsPerCasePerConfiguration": 1,
+  "model": "Codex subagents inheriting this session model; exact backend identifier not exposed by collaboration API",
+  "tools": "Only fixture reads, optional provided skill read, output write; no live connectors or external actions",
+  "grading": "Predefined task-outcome criteria; blinded automated-model judgment, reviewed by coordinator; not human validation",
+  "limits": [
+    "Small hand-authored synthetic test set",
+    "One run per case and condition",
+    "Same model family for execution and grading",
+    "No cross-model, installation, connector, scheduling, time-saved or latency validation",
+    "Explicit skill invocation; discovery and triggering not tested"
+  ],
+  "hashes": {
+    "daily-debrief": "a4d4d3d7f6c96a1265af8383ac14a03bb1b3b7599741a96d913ef8de0be51c56",
+    "find-low-leverage-workflows": "4f25490c25cbaaaecb2aaa965dce251dcb7b5c3513d2b679e108318828574564"
+  }
+}

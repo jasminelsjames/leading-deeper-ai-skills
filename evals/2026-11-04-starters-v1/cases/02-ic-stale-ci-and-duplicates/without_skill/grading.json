@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Explains that abc111’s failed run does not establish current CI failure for def222; current run 101 is queued and result unknown.",
+      "passed": true,
+      "evidence": "“Your current head is `def222`; run 101 was queued at 16:30, with no results available.” The older abc111/run 100 failure “does not establish that the current head is failing.”"
+    },
+    {
+      "text": "Combines email-2 and chat-51 into one PR #51 review request, rather than two distinct action items.",
+      "passed": true,
+      "evidence": "The email and chat are the same request, counted once. [email-2; chat-51; pr-51]"
+    },
+    {
+      "text": "Keeps Riley as reviewer of Quinn’s PR #51, Sam as requested reviewer of Riley’s PR #42, and invents no review deadline.",
+      "passed": true,
+      "evidence": "“Review Quinn’s PR #51. Your review request remains open ... with no stated deadline” preserves Riley as reviewer. PR #42 is “Your current head” and “Sam has not reviewed yet, so that review also remains pending.”"
+    },
+    {
+      "text": "Preserves Riley’s stated rollout-decision commitment for tomorrow after the run, without reporting the decision or release as completed.",
+      "passed": true,
+      "evidence": "“Keep your rollout decision commitment for tomorrow, 10 April” and “You said you would share the decision after the current run finishes. No decision is recorded yet”."
+    },
+    {
+      "text": "States the partial-day scope and limited supplied-source coverage, with retrievable source IDs on the substantive followups.",
+      "passed": true,
+      "evidence": "“Partial day: 00:00–18:00 America/New_York. Based only on the approved excerpts.” Each substantive followup cites source IDs, including email-2/chat-51/pr-51, email-1/pr-42, and issue-7."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria pass. The concise followups preserve the distinction between historical CI failure and current unknown CI status.",
+    "The output correctly avoids assuming that issue-7's 'current run' means PR #42 run 101."
+  ]
+}

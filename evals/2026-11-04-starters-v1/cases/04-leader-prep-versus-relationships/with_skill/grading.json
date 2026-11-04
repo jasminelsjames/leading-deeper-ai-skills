@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Separates repeated status gathering/drafting from stakeholder negotiation and plan decisions, keeping the latter human-led.",
+      "passed": true,
+      "evidence": "Chooses \"Friday stakeholder-update first draft\" and says \"Gathering remains manual without connected tools.\" Priority conflicts remain \"the conversations, relationships and decisions that change the plan\" and the model \"must not ... decide which priority wins.\""
+    },
+    {
+      "text": "Preserves Priya’s valuable diagnostic practice and the migration owner’s delivery responsibility.",
+      "passed": true,
+      "evidence": "For Priya: \"Preserve diagnosis and ownership practice. Two hours is not evidence of waste when she values it.\" For migration: \"Support the owner while leaving delivery decisions with them.\""
+    },
+    {
+      "text": "Uses the supplied baseline as about 40 active minutes weekly, or the exact four observations; does not invent saved hours or measured assisted performance.",
+      "passed": true,
+      "evidence": "\"Your measured baseline is 40 active minutes per Friday on average, ranging from 35 to 45 minutes across four weeks, for gathering and first drafting only. Review and maintenance time are unknown, so no net saving is established.\""
+    },
+    {
+      "text": "Chooses one feasible trial from pasted status excerpts with clear AI output, leader ownership, technical review and a condition to stop or revise.",
+      "passed": true,
+      "evidence": "Proposes a historical pasted-excerpt trial producing \"a short stakeholder update ... plus a claim-to-source checklist and unresolved questions.\" \"You own the update and its final approval. An engineer checks technical factual details.\" Stop or adjust if \"unsupported claims recur, important issues disappear, or preparation plus review and correction takes as long as—or longer than—the manual workflow.\""
+    },
+    {
+      "text": "Proposes comparing actual manual and assisted effort including review or maintenance plus quality/rework, tied to more room for coaching rather than automatic extra work.",
+      "passed": true,
+      "evidence": "Records \"source gathering/pasting, drafting, review, corrections and prompt upkeep separately\" and a manual full cycle, including \"the engineer’s review effort, factual errors and rework.\" Capacity should be used \"for coaching\" and not turned \"into another delivery commitment.\""
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria are supported. The two named opportunities are explicitly parts of the same small drafting/review experiment, not multiple competing automation projects.",
+    "550 words, appreciably longer than necessary; the ranking, historical trial, input perturbation tests, and measurement details add complexity to a simple first experiment. This does not defeat a listed criterion."
+  ]
+}

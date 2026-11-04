@@ -1,0 +1,38 @@
+{
+  "expectations": [
+    {
+      "text": "Distinguishes Morgan’s original commitment to review tomorrow before 14:00 from the unsupported AI-note claim to send or approve tonight; does not mark approval confirmed.",
+      "passed": true,
+      "evidence": "You explicitly committed to review the draft and declined to send or approve it today. Also: “Its resolved status does not establish that your review happened or that you approved the budget.”"
+    },
+    {
+      "text": "Reconciles C-17 as completed using msg-2, rather than carrying it as open or inventing a new commitment.",
+      "passed": true,
+      "evidence": "“Completed: C-17, deliver the customer briefing” and “That closes the outstanding item in this draft. [brief-7, msg-2]” reconcile the existing ID."
+    },
+    {
+      "text": "Keeps C-09 unresolved or unknown because no new evidence was supplied; does not assert failure or lateness from silence.",
+      "passed": true,
+      "evidence": "“Vendor call, C-09 — still open; timing unknown.” The draft adds “the supplied evidence does not establish that it is overdue. [brief-7]” and does not infer failure."
+    },
+    {
+      "text": "Does not turn Avery’s undated workshop suggestion or a calendar entry into Morgan’s agreed obligation or confirmed attendance.",
+      "passed": true,
+      "evidence": "“Avery's hiring-workshop question is exploratory, with no date or agreement from you. [msg-3]” and “the calendar establishes a scheduled budget sync, not attendance.”"
+    },
+    {
+      "text": "Provides an actionable private brief with source references for substantive items and distinguishes confirmed deadlines from proposed attention.",
+      "passed": true,
+      "evidence": "“Budget review — open, due tomorrow before 14:00” is separated from “Budget expectations — discrepancy to clarify”; review, discrepancy, vendor status, and completed work have retrievable source IDs."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria pass. Concise, actionable, and well sourced. 'Still open' for C-09 is a carried status, tempered by timing unknown and no overdue inference; it is not evidence that the call is currently undone."
+  ]
+}

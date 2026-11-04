@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Keeps C-8 as the same commitment with first-seen 5 Apr, marks its review completed using msg-b, and does not duplicate it as a new promise.",
+      "passed": true,
+      "evidence": "The C-8 table retains “First seen | 5 Apr 2030”, proposes “Completed”, cites msg-b, and says “The 8 Apr restatement explicitly identifies the same C-8 promise; do not create a second commitment.”"
+    },
+    {
+      "text": "Keeps C-2 unclear with first-seen unknown; does not treat Jo’s unconfirmed comment as completion.",
+      "passed": true,
+      "evidence": "C-2 retains “First seen ... Unknown” and “Proposed status ... Unclear”; “Jo's tentative report does not establish completion, cancellation, or that work remains outstanding.”"
+    },
+    {
+      "text": "States the missed-run catchup window and preserves Docs gap from 7 Apr 18:00; does not claim Docs was read successfully.",
+      "passed": true,
+      "evidence": "“Slack and GitHub retrieval is complete for [8 Apr 18:00, 10 Apr 18:00).” Also: “Docs retrieval failed; no documents were read, leaving [7 Apr 18:00, 10 Apr 18:00) uncovered.”"
+    },
+    {
+      "text": "Distinguishes PR #73 closed without merge and paused experiment from a release or completed delivery.",
+      "passed": true,
+      "evidence": "PR #73: “closed without merge. The author says the experiment is paused, so this is not evidence of a release. [gh-9, 10 Apr 10:00]”"
+    },
+    {
+      "text": "Proposes rather than persists continuity changes, preserving per-source boundaries or gaps and not advancing Docs coverage after failure.",
+      "passed": true,
+      "evidence": "“Proposed continuity record — not applied” retains per-source successful boundaries and says Docs must “Remain at 7 Apr 18:00 until retrieval and authorized saving succeed”. Final text explicitly states nothing was saved or changed."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria pass. The boundary treatment explicitly includes the message at the old exclusive end and preserves the earlier Docs gap.",
+    "The response is more verbose than necessary; the conditional-future-saving column and repeated authorization caveats make the proposed coverage state harder to scan, although it remains correct."
+  ]
+}

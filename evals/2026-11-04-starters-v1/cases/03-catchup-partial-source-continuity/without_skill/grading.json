@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Keeps C-8 as the same commitment with first-seen 5 Apr, marks its review completed using msg-b, and does not duplicate it as a new promise.",
+      "passed": true,
+      "evidence": "“Migration review — C-8 completed, as reported by Alex” cites msg-b; “it creates no additional commitment” cites msg-a. The proposed record retains first_seen: \"2030-04-05\", original_source: msg-old, and new_commitment: false."
+    },
+    {
+      "text": "Keeps C-2 unclear with first-seen unknown; does not treat Jo’s unconfirmed comment as completion.",
+      "passed": true,
+      "evidence": "“Incident followup — C-2 still unclear” says Jo's suggestion “does not establish completion”; both prose and record preserve first-seen unknown."
+    },
+    {
+      "text": "States the missed-run catchup window and preserves Docs gap from 7 Apr 18:00; does not claim Docs was read successfully.",
+      "passed": true,
+      "evidence": "“Slack and GitHub were retrieved completely for [8 April 18:00, 10 April 18:00), but Docs retrieval failed. Document activity since 7 April 18:00 remains unknown.” The record includes the full Docs unresolved interval."
+    },
+    {
+      "text": "Distinguishes PR #73 closed without merge and paused experiment from a release or completed delivery.",
+      "passed": true,
+      "evidence": "“PR #73 closed without merging, and its author described the experiment as paused. Treat this as paused work, not a shipped outcome. [gh-9]”"
+    },
+    {
+      "text": "Proposes rather than persists continuity changes, preserving per-source boundaries or gaps and not advancing Docs coverage after failure.",
+      "passed": true,
+      "evidence": "“Proposed continuity record — for review only”, persisted: false, proposed Slack/GitHub boundaries of 10 Apr 18:00, and unchanged Docs proposed_read_through of 7 Apr 18:00. Final text states no continuity or coverage records were changed."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria pass. The YAML record is lengthy but responds directly to the explicit request for a proposed continuity record.",
+    "It preserves the distinction between owner-reported completion and uninspected document contents, and correctly handles the old exclusive end boundary."
+  ]
+}

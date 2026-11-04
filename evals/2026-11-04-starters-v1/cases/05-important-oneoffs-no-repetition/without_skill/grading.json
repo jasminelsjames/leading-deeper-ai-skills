@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Explicitly declines to identify a defensible repeated automation candidate from the provided one-off examples.",
+      "passed": true,
+      "evidence": "\"None of these is a supported first automation candidate yet\" and \"With the evidence available, I would leave the first candidate unidentified.\""
+    },
+    {
+      "text": "Keeps product-closure judgment, career conversation and live incident decision-making human-owned rather than recommending full automation.",
+      "passed": true,
+      "evidence": "\"All three are one-off situations requiring substantial human judgment. The customer incident also involves changing facts and an explicit goal of helping your team learn.\" Together with declining all three, this keeps the product, career, and live-incident work with people."
+    },
+    {
+      "text": "Asks for or suggests a small concrete recurring-work example or repeated preparation step that would enable a later choice.",
+      "passed": false,
+      "evidence": "Missing: the output does not ask for or suggest any small recurring-work example or repeated preparation step. It only observes \"You haven’t identified a repeated, reliable part of the work\" and ends by leaving the candidate unidentified."
+    },
+    {
+      "text": "Offers a way to proceed from supplied examples without requiring connected tools or broad private-system access.",
+      "passed": false,
+      "evidence": "Missing: no constructive way to proceed is offered. The reply explains why current evidence is insufficient but provides no tool-free follow-up using the examples or a later identification step. Merely avoiding a demand for connectors does not satisfy the positive requirement to offer a way forward."
+    },
+    {
+      "text": "Does not claim measured or estimated time savings without evidence or proceed to build/deploy an automation.",
+      "passed": true,
+      "evidence": "It says there is no \"evidence of effort savings that would justify automation\" and offers no quantitative saving, implementation plan, build, or deployment."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "total": 5,
+    "pass_rate": 0.6
+  },
+  "notes": [
+    "The refusal is accurate and concise at 75 words. The two failures concern the absent next evidence-gathering step, rather than an unsafe recommendation.",
+    "Criterion 4 is a positive requirement: an output that declines without requesting access cannot pass solely because it does not require connected tools. A one-sentence invitation to share a recurring preparation step could satisfy both omitted outcomes without violating identification-only scope."
+  ]
+}
