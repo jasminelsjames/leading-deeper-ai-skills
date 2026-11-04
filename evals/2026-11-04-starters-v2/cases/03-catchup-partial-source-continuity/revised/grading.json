@@ -1,0 +1,51 @@
+{
+  "case": "03",
+  "answer": "A",
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Keeps C-8 as the same commitment with first-seen 5 Apr, marks its review completed using msg-b, and does not duplicate it as a new promise.",
+        "passed": true,
+        "evidence": "Source msg-a explicitly says the same C-8 promise; msg-b says review done. Output C-8 record preserves \"First seen: 5 Apr 2030\", cites [msg-b], marks \"completed\", and says \"Reuse C-8; do not add a duplicate.\""
+      },
+      {
+        "text": "Keeps C-2 unclear with first-seen unknown; does not treat Jo’s unconfirmed comment as completion.",
+        "passed": true,
+        "evidence": "Output C-2 record: \"First seen: unknown\"; \"Proposed status: unclear, unchanged\"; Jo \"could not confirm\" [msg-c]. This matches brief-8 and does not infer completion."
+      },
+      {
+        "text": "States the missed-run catchup window and preserves Docs gap from 7 Apr 18:00; does not claim Docs was read successfully.",
+        "passed": true,
+        "evidence": "Output: Slack/GitHub \"[8 Apr 18:00, 10 Apr 18:00)\"; \"Docs retrieval failed: the gap remains [7 Apr 18:00, 10 Apr 18:00)\"; \"no documents were read.\""
+      },
+      {
+        "text": "Distinguishes PR #73 closed without merge and paused experiment from a release or completed delivery.",
+        "passed": true,
+        "evidence": "Source gh-9: \"closed without merge\" and \"paused, not released.\" Output: \"PR #73 — closed without merge; experiment paused\"; \"Do not treat this as a release\"."
+      },
+      {
+        "text": "Proposes rather than persists continuity changes, preserving per-source boundaries or gaps and not advancing Docs coverage after failure.",
+        "passed": true,
+        "evidence": "Output: \"Proposed continuity record — unapplied\"; \"No brief, commitment update or coverage change has been saved\"; source table retains Docs \"7 Apr 18:00\" and proposes \"No advance\". Slack/GitHub boundary changes are explicitly conditional."
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "Consider checking the incident-followup record to establish whether C-2 is complete.",
+    "unnecessaryRepetition": [
+      "The same-C-8/no-duplicate instruction recurs in Tracking, the C-8 history, and the final retry paragraph.",
+      "C-2's unconfirmed status is restated in Tracking and multiple fields of its detailed record."
+    ],
+    "notes": "The user explicitly asks for both a draft and proposed continuity record, so the full record and some overlap are justified. The source-specific boundary table is useful, preserves the earlier Docs gap, and clearly separates proposals from writes. Repetition is a modest scanning cost, not an omission or material error."
+  }
+}

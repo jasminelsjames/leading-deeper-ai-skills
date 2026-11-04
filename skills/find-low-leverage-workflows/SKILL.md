@@ -33,7 +33,7 @@ Assess:
 - **Human responsibility:** the outcome owner, consequential decisions and review, and useful learning to preserve.
 - **Practical fit:** available sources and tools, how quality could be checked, and how easy a small trial would be to stop or reverse.
 
-Prioritize a few plausible candidates with reasons, rather than inventing a numerical score. A one-off important decision is not low leverage simply because it is difficult or time-consuming. If there is no sensible candidate in the sample, explain what context would make a choice possible.
+Compare plausible candidates using the evidence, rather than inventing a numerical score. Recommend the strongest first choice; show alternatives when they materially affect that choice or the user asks for them. A one-off important decision is not low leverage simply because it is difficult or time-consuming. If there is no sensible candidate in the sample, explain what context would make a choice possible.
 
 ## Use a practice pool, then apply the learning
 
@@ -58,14 +58,14 @@ State which connections are useful for the proposed experiment and which are unn
 
 ## Return a usable decision
 
-Keep the result concise:
+Lead with **one recommended step to improve and why**, grounded in the user's examples. Name what stays with people: consequential judgment, delivery ownership and useful learning. If no candidate is supported, say so and request the smallest useful recurring-work example; do not force a ranking or experiment.
 
-1. A work map showing ownership, repeated steps and where human attention or growth matters.
-2. A few ranked automation or assistance opportunities, with their evidence and uncertainties.
-3. One first experiment: input → AI work → reviewable output, required tools, owner and reviewer, quality checks, and when to stop or adjust.
-4. What the user deliberately wants to make room for: customer impact, decisions, ownership, growth or wellbeing.
-5. How to assess it: a baseline and follow-up for repeated effort or interruptions, output quality and rework, plus feedback from the people affected. Treat available capacity and growth as outcomes to observe; do not promise saved hours or assume all returned time should become extra delivery work.
+When a trial is requested, give a concrete next step: **specific input → AI task → reviewable output → human check**. Identify the owner, required tools already available, important failure case and practical point to stop or adjust. Distinguish AI work from manual gathering or decisions. Keep this focused on the first trial rather than a deployment plan.
 
-If the user requested identification only, finish with the recommendation. If they authorized building an experiment, continue within that scope. Keep the same ownership and learning decisions visible as the workflow changes.
+Connect the trial to what the user wants to make room for. State the baseline and follow-up needed to judge effort or interruptions, quality and rework. Preserve unknowns; do not promise saved hours or assume returned capacity must become extra delivery work.
+
+Use a full work map, ranked alternatives or detailed measurement plan when requested or needed to resolve a real tradeoff. Otherwise omit them. Avoid repeating the same rationale in a map, ranking and closing summary.
+
+For identification only, finish with the recommendation and essential missing evidence. If building is authorized, continue within that scope, preserving ownership and learning decisions.
 
 Source and companion prompts: https://jasminejames.dev/leading-deeper/

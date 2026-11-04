@@ -1,0 +1,50 @@
+{
+  "case": "03",
+  "answer": "B",
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Keeps C-8 as the same commitment with first-seen 5 Apr, marks its review completed using msg-b, and does not duplicate it as a new promise.",
+        "passed": true,
+        "evidence": "Output C-8 table: \"First seen | 5 Apr 2030\"; \"Proposed status | Completed\"; \"[msg-b, 9 Apr 12:00]\"; \"same C-8 promise; do not create a second commitment\"."
+      },
+      {
+        "text": "Keeps C-2 unclear with first-seen unknown; does not treat Jo’s unconfirmed comment as completion.",
+        "passed": true,
+        "evidence": "Output C-2 table preserves \"Unknown\" first-seen and due date, \"Unclear\" proposed status, and says \"Jo's tentative report does not establish completion, cancellation, or that work remains outstanding.\""
+      },
+      {
+        "text": "States the missed-run catchup window and preserves Docs gap from 7 Apr 18:00; does not claim Docs was read successfully.",
+        "passed": true,
+        "evidence": "Output: Slack/GitHub complete for \"[8 Apr 18:00, 10 Apr 18:00)\"; Docs \"failed; no documents were read\", leaving \"[7 Apr 18:00, 10 Apr 18:00)\" uncovered. The exclusive previous boundary is explained."
+      },
+      {
+        "text": "Distinguishes PR #73 closed without merge and paused experiment from a release or completed delivery.",
+        "passed": true,
+        "evidence": "Output: \"PR #73: closed without merge\"; \"experiment is paused, so this is not evidence of a release.\" [gh-9, 10 Apr 10:00]"
+      },
+      {
+        "text": "Proposes rather than persists continuity changes, preserving per-source boundaries or gaps and not advancing Docs coverage after failure.",
+        "passed": true,
+        "evidence": "Output: \"Proposed continuity record — not applied\"; retained Slack/GitHub 8 Apr boundaries and Docs 7 Apr boundary; future source boundaries are conditional. Closing sentence confirms no save, coverage changes, jobs, or contact."
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "If useful and access becomes available, inspect doc-review and seek supporting evidence for C-2 before changing its status.",
+    "unnecessaryRepetition": [
+      "The caveat that C-8 completion is supported by Alex's report while document comments remain unread appears in What changed, the continuity table, and Limits and decisions."
+    ],
+    "notes": "The full proposed commitment and coverage tables are expressly requested and preserve all important history. Short introductory findings make the record scannable. Inspecting the review document is optional verification of an already completed review, whereas seeking evidence for C-2 addresses the unresolved item; the wording keeps both conditional and invents no deadline."
+  }
+}

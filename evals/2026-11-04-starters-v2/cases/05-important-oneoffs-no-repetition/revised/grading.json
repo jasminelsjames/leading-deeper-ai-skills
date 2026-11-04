@@ -1,0 +1,46 @@
+{
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Explicitly declines to identify a defensible repeated automation candidate from the provided one-off examples.",
+        "passed": true,
+        "evidence": "Source: one-off activities without repeated preparation or reliable runbooks. Output: “I wouldn’t choose any of these as a first automation candidate” because there is no established repeated step with usable context and a checkable result."
+      },
+      {
+        "text": "Keeps product-closure judgment, career conversation and live incident decision-making human-owned rather than recommending full automation.",
+        "passed": true,
+        "evidence": "Output: “product-line decision needs consequential judgment”; “career conversation needs your attention to the relationship”; “customer incident needs human ownership as facts change”; incident practice builds capability."
+      },
+      {
+        "text": "Asks for or suggests a small concrete recurring-work example or repeated preparation step that would enable a later choice.",
+        "passed": true,
+        "evidence": "Output: “one recurring preparation or coordination step: what repeats, who owns it, what feels burdensome versus useful practice, and what a good result looks like.”"
+      },
+      {
+        "text": "Offers a way to proceed from supplied examples without requiring connected tools or broad private-system access.",
+        "passed": true,
+        "evidence": "Output: “A short description is enough to start; no connected tools are needed.” This provides a low-access way to identify a repeated preparation step related to the supplied work."
+      },
+      {
+        "text": "Does not claim measured or estimated time savings without evidence or proceed to build/deploy an automation.",
+        "passed": true,
+        "evidence": "Output requests “A rough frequency or effort estimate ... if known” but claims no savings, builds nothing and supplies no implementation plan."
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "“I wouldn’t choose any of these as a first automation candidate.” The useful next step is to describe one recurring preparation or coordination step.",
+    "unnecessaryRepetition": [],
+    "notes": "Concise and complete for an identification-only request: declines the unsupported choice, preserves human judgment and learning, and asks for a minimal usable recurring-work example. No material factual error or omission."
+  }
+}

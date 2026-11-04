@@ -1,0 +1,49 @@
+{
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Separates repeated status gathering/drafting from stakeholder negotiation and plan decisions, keeping the latter human-led.",
+        "passed": true,
+        "evidence": "Source: “conversations often change the plan.” Output: “Keep the priority conversations with you” and “Preserve the conversations, relationships and decisions that change the plan.”"
+      },
+      {
+        "text": "Preserves Priya’s valuable diagnostic practice and the migration owner’s delivery responsibility.",
+        "passed": true,
+        "evidence": "Source: Priya “explicitly values the practice”; leader “should not take their delivery decisions away.” Output: “Preserve diagnosis and ownership practice” and “leaving delivery decisions with them.”"
+      },
+      {
+        "text": "Uses the supplied baseline as about 40 active minutes weekly, or the exact four observations; does not invent saved hours or measured assisted performance.",
+        "passed": true,
+        "evidence": "Source: 40, 35, 45 and 40 active minutes; review/maintenance unmeasured. Output: “40 active minutes per Friday on average” and “no net saving is established.”"
+      },
+      {
+        "text": "Chooses one feasible trial from pasted status excerpts with clear AI output, leader ownership, technical review and a condition to stop or revise.",
+        "passed": true,
+        "evidence": "Output: “numbered 1–5”; “short stakeholder update ... plus a claim-to-source checklist”; “You own the update and its final approval”; “An engineer checks technical factual details”; “Stop or adjust it if unsupported claims recur.”"
+      },
+      {
+        "text": "Proposes comparing actual manual and assisted effort including review or maintenance plus quality/rework, tied to more room for coaching rather than automatic extra work.",
+        "passed": true,
+        "evidence": "Output: “record source gathering/pasting, drafting, review, corrections and prompt upkeep separately”; “measure a manual full cycle”; “Include the engineer’s review effort, factual errors and rework”; “deliberately use some for coaching.”"
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "“Choose the Friday stakeholder-update first draft as your first AI experiment.” The first trial action is to start with one historical Friday’s five numbered excerpts.",
+    "unnecessaryRepetition": [
+      "Human ownership of stakeholder conversations, Priya’s practice and migration decisions appears in the work table and is restated in the following opportunity paragraph.",
+      "The opening recommendation, first table row and ranked-opportunities sentence all identify update drafting as the same first candidate."
+    ],
+    "notes": "A complete, feasible recommendation with explicit source grounding and a sound distinction between the measured preparation baseline and unmeasured full-cycle savings. The table makes the alternatives reviewable, but the repeated recommendation and ownership language make it longer than necessary. No material omission."
+  }
+}

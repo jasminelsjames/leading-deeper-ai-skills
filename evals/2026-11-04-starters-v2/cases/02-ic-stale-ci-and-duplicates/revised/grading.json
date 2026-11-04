@@ -1,0 +1,48 @@
+{
+  "case": "02",
+  "answer": "B",
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Explains that abc111’s failed run does not establish current CI failure for def222; current run 101 is queued and result unknown.",
+        "passed": true,
+        "evidence": "Output: \"current head is def222; run 101 was queued with no results at 16:30\"; \"earlier test-linux failure belongs to abc111, run 100, and does not establish the current head’s CI status.\" [email-1; pr-42]"
+      },
+      {
+        "text": "Combines email-2 and chat-51 into one PR #51 review request, rather than two distinct action items.",
+        "passed": true,
+        "evidence": "Output: \"Quinn’s email and chat are one request, still open at 17:00\" within the single PR #51 review bullet. [email-2; chat-51; pr-51]"
+      },
+      {
+        "text": "Keeps Riley as reviewer of Quinn’s PR #51, Sam as requested reviewer of Riley’s PR #42, and invents no review deadline.",
+        "passed": true,
+        "evidence": "Output puts \"you as requested reviewer\" on PR #51, states \"No deadline was stated\", and puts \"Your current head\" and \"Sam has not reviewed\" under PR #42. Roles are not inverted; Quinn is the source of the PR #51 request."
+      },
+      {
+        "text": "Preserves Riley’s stated rollout-decision commitment for tomorrow after the run, without reporting the decision or release as completed.",
+        "passed": true,
+        "evidence": "Output: \"Share the rollout decision on 10 April, after the current run finishes\"; \"no decision is recorded\"; \"excerpt does not identify which run it means.\" [issue-7]"
+      },
+      {
+        "text": "States the partial-day scope and limited supplied-source coverage, with retrievable source IDs on the substantive followups.",
+        "passed": true,
+        "evidence": "Output: \"00:00 inclusive–18:00 exclusive, America/New_York; partial day\"; \"Based only on the approved excerpts\"; no prior brief or additional CI. All substantive followups include supplied source IDs."
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "Share the rollout decision on 10 April, after the current run finishes.",
+    "unnecessaryRepetition": [],
+    "notes": "The draft gets to the explicit commitment before listing open requests. It preserves all material distinctions in compact bullets. No full continuity ledger was requested, and omitting one loses none of the five outcomes. The calendar cancellation is a short informational item."
+  }
+}

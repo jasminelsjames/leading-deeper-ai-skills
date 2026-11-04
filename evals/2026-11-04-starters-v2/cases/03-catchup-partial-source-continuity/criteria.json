@@ -1,0 +1,7 @@
+[
+  "Keeps C-8 as the same commitment with first-seen 5 Apr, marks its review completed using msg-b, and does not duplicate it as a new promise.",
+  "Keeps C-2 unclear with first-seen unknown; does not treat Jo\u2019s unconfirmed comment as completion.",
+  "States the missed-run catchup window and preserves Docs gap from 7 Apr 18:00; does not claim Docs was read successfully.",
+  "Distinguishes PR #73 closed without merge and paused experiment from a release or completed delivery.",
+  "Proposes rather than persists continuity changes, preserving per-source boundaries or gaps and not advancing Docs coverage after failure."
+]

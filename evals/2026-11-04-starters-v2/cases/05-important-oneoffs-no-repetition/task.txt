@@ -1,0 +1,3 @@
+Which of these should I automate to get leverage? Please choose only if the evidence supports a sensible first candidate. I am a manager trying AI for the first time.
+
+The only work examples I can share today are: a one-off decision about whether to close a product line; a difficult conversation about a teammate’s career goals; a one-time response to a serious customer incident where facts are still changing. I have no historical examples, repeated preparation steps, reliable runbooks or measured effort to share. No tools are connected. My team is developing its incident skills and I do not want to take the learning or judgment away. I am asking for identification only, not an implementation plan.

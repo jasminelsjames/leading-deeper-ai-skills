@@ -1,0 +1,46 @@
+{
+  "original5criteria": {
+    "expectations": [
+      {
+        "text": "Separates repeated status gathering/drafting from stakeholder negotiation and plan decisions, keeping the latter human-led.",
+        "passed": true,
+        "evidence": "Source: stakeholder conversations “often change the plan.” Output: “Keep the stakeholder conversations with you: resolving conflicting priorities changes the plan.”"
+      },
+      {
+        "text": "Preserves Priya’s valuable diagnostic practice and the migration owner’s delivery responsibility.",
+        "passed": true,
+        "evidence": "Output: “Preserve Priya’s incident-writing practice with her mentor because she values its learning” and “Keep migration delivery decisions with the team’s owner.”"
+      },
+      {
+        "text": "Uses the supplied baseline as about 40 active minutes weekly, or the exact four observations; does not invent saved hours or measured assisted performance.",
+        "passed": true,
+        "evidence": "Source: 40, 35, 45 and 40 active minutes; review/maintenance unmeasured. Output: “40 active minutes per Friday (35–45 minutes across four weeks)” and “no evidence yet of net time savings.”"
+      },
+      {
+        "text": "Chooses one feasible trial from pasted status excerpts with clear AI output, leader ownership, technical review and a condition to stop or revise.",
+        "passed": true,
+        "evidence": "Output: “Paste copies of the five excerpts from one historical Friday”; “concise stakeholder draft”; “Have the engineer check technical factual details”; “You own final approval and sending”; “Adjust or stop if unsupported claims recur.”"
+      },
+      {
+        "text": "Proposes comparing actual manual and assisted effort including review or maintenance plus quality/rework, tied to more room for coaching rather than automatic extra work.",
+        "passed": true,
+        "evidence": "Output: “Record active time for selecting/pasting, prompting, drafting, your review, the engineer’s review, corrections and any upkeep”; “record substantive omissions and factual corrections”; “Measure ordinary review time”; “reserve it for coaching.”"
+      }
+    ],
+    "summary": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "pass_rate": 1.0
+    }
+  },
+  "factualReview": {
+    "passed": true,
+    "issues": []
+  },
+  "actionability": {
+    "firstUsefulAction": "“Improve the first draft of your Friday stakeholder update.” The first trial action is to paste the five labeled excerpts from one historical Friday.",
+    "unnecessaryRepetition": [],
+    "notes": "Directly chooses one feasible activity and supplies enough detail to run and evaluate a bounded manual trial. It explicitly warns that the existing 40-minute baseline cannot establish end-to-end savings, and proposes measuring review and upkeep. The synthetic practice case adds a small relevant quality check. No material omission."
+  }
+}
