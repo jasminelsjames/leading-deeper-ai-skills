@@ -34,8 +34,10 @@ I choose the priorities. Do not send messages or change tasks.
 
 [Website guides](https://jasminejames.dev/leading-deeper) show the inputs, outputs and human checks. [catalog.json](catalog.json) provides the same skill names, requests, connector guidance and first-use contracts for agents. Examples are fictional, not company reports or measured benefits.
 
-## Improve a skill
+## Tried a skill?
 
-[Open a PR](CONTRIBUTING.md) with the problem, your change and an example showing its effect. Run `python3 scripts/validate_repository.py` before submitting. Maintainers review changes before the website imports an approved version.
+Did it work? [Share feedback](https://github.com/jasminelsjames/leading-deeper-ai-skills/issues/new) with what you expected, what happened and what would make the result more useful. Use fictional or sanitized examples.
+
+Have an improvement? [Open a PR](CONTRIBUTING.md) with the problem, your change and an example showing its effect. Run `python3 scripts/validate_repository.py` before submitting. Maintainers review changes before the website imports an approved version.
 
 [MIT license](LICENSE). These are Jasmine’s personal resources accompanying *Leading Deeper with AI*.
