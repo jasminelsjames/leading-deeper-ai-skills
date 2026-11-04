@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Distinguishes repeated configuration retrieval/drafting from diagnostic questions that develop new engineers’ expertise.",
+      "passed": true,
+      "evidence": "Targets \"finding reviewed configuration instructions and drafting a cited reply\" while \"Keep diagnosis and discussion with people, including the two new on-call engineers.\" It explicitly excludes diagnostic answers from the first trial."
+    },
+    {
+      "text": "Chooses a small support trial using the six sanitized threads and reviewed docs, without making a Slack connector or production access prerequisite.",
+      "passed": true,
+      "evidence": "\"Casey supplies the six sanitized historical threads and reviewed documentation as pasted files\" for the six-thread practice pool. \"Pasted files and an AI chat are enough. No Slack MCP, production access or additional service connection is needed.\""
+    },
+    {
+      "text": "Keeps Casey as process/trial owner and an experienced engineer checking answers, with publication or consequential answers reviewed by people.",
+      "passed": true,
+      "evidence": "\"Casey owns the trial; an experienced engineer checks its answers.\" \"AI drafts; people own technical judgments, corrections, process changes and any future publication.\" It states \"Nothing should be deployed or sent\" and that \"There is no authorization for auto-publication.\""
+    },
+    {
+      "text": "Does not infer saved time or support-wide improvement from message counts or the six-question sample; unmeasured effort and uncertain results stay explicit.",
+      "passed": true,
+      "evidence": "\"The small sample does not establish the ongoing configuration share, and time per question is unknown.\" \"Six threads provide directional evidence, not a reliable savings estimate\" and \"Only a later live pilot could show fewer interruptions.\""
+    },
+    {
+      "text": "Defines observable quality and human-effort or interruption checks, a stop/revise condition, and preserves migration ownership and on-call learning as intended benefits.",
+      "passed": true,
+      "evidence": "Measures manual versus assisted effort, \"citation accuracy, substantive errors and rework,\" then interruption frequency only in a possible later pilot. Stops if it \"keeps answering diagnostic questions, invents citations, or takes as much human effort to review and correct as manual lookup.\" The desired outcome is \"more uninterrupted migration time and continued diagnostic learning,\" and the work map preserves the \"team-owned migration.\""
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria are supported. Offline evidence is correctly limited to draft quality and effort, with real interruption reduction deferred to possible later observation.",
+    "813 words is overly elaborate for the first small experiment. The work map, ranking, failure variants, one prompt revision, and future live-pilot discussion could be compressed. The extra detail remains within proposing a trial and does not deploy or send anything."
+  ]
+}

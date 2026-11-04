@@ -1,0 +1,10 @@
+Prepare my private end-of-day debrief for 8 April 2030, local midnight to midnight in America/New_York. I am Morgan and my focus is leadership. Use only these excerpts and the previous brief. Tell me what needs my attention. Return a draft here; do not contact anyone or update tasks.
+
+Sources:
+[cal-1, 8 Apr 09:00] Calendar: budget sync scheduled at 10:00; attendance not recorded.
+[note-1, 8 Apr 10:35] AI meeting notes: Morgan agreed to send the approved budget tonight.
+[msg-1, 8 Apr 10:40] Morgan in team chat: I will review the draft budget tomorrow before 14:00. I am not agreeing to send or approve it today.
+[doc-1, 8 Apr 15:00] Budget document comment asks Morgan to review the assumptions before tomorrow 14:00; comment later marked resolved, but no approval recorded.
+[msg-2, 8 Apr 16:00] Morgan: The customer briefing is complete; here is the final document, approved by the customer contact.
+[msg-3, 8 Apr 17:00] Avery: Any thoughts about a future hiring workshop? No date set.
+Previous brief [brief-7]: commitment C-17, Morgan to deliver customer briefing, first seen 3 Apr, due 8 Apr, status open. Commitment C-09, return a vendor call, first seen 1 Apr, due date unknown, status open. The approved sources contain no new evidence about C-09. No email access was supplied.

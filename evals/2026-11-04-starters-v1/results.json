@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "studyId": "2026-11-04-starters-v1",
+  "date": "2026-11-04",
+  "title": "First starter skill evaluation",
+  "sourceRepository": "https://github.com/jasminelsjames/leading-deeper-ai-skills",
+  "sourceCommit": "c84292ad2f7c2d1411833ca0c26ed464b5af35e4",
+  "skillCount": 2,
+  "caseCount": 6,
+  "independentSessions": 12,
+  "runsPerCasePerCondition": 1,
+  "modelSetup": "Fresh Codex subagents inheriting the same session configuration. Exact backend model identifier was not exposed; no model override was used.",
+  "grading": "Two separate fresh Codex graders scored three cases each with A/B condition labels hidden. The coordinator then inspected all 12 outputs and the grading. No human validation has been performed.",
+  "summary": {
+    "with_skill": {
+      "passed": 30,
+      "total": 30,
+      "casesMeetingAllChecks": 6,
+      "cases": 6,
+      "approximateWords": 3052
+    },
+    "without_skill": {
+      "passed": 28,
+      "total": 30,
+      "casesMeetingAllChecks": 5,
+      "cases": 6,
+      "approximateWords": 1934
+    }
+  },
+  "cases": [
+    {
+      "id": 1,
+      "name": "leader-conflicting-commitment",
+      "skill": "daily-debrief",
+      "checks": 5,
+      "conditions": {
+        "with_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 575,
+          "output": "cases/01-leader-conflicting-commitment/with_skill/answer.md",
+          "grading": "cases/01-leader-conflicting-commitment/with_skill/grading.json"
+        },
+        "without_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 291,
+          "output": "cases/01-leader-conflicting-commitment/without_skill/answer.md",
+          "grading": "cases/01-leader-conflicting-commitment/without_skill/grading.json"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "ic-stale-ci-and-duplicates",
+      "skill": "daily-debrief",
+      "checks": 5,
+      "conditions": {
+        "without_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 179,
+          "output": "cases/02-ic-stale-ci-and-duplicates/without_skill/answer.md",
+          "grading": "cases/02-ic-stale-ci-and-duplicates/without_skill/grading.json"
+        },
+        "with_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 402,
+          "output": "cases/02-ic-stale-ci-and-duplicates/with_skill/answer.md",
+          "grading": "cases/02-ic-stale-ci-and-duplicates/with_skill/grading.json"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "catchup-partial-source-continuity",
+      "skill": "daily-debrief",
+      "checks": 5,
+      "conditions": {
+        "with_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 580,
+          "output": "cases/03-catchup-partial-source-continuity/with_skill/answer.md",
+          "grading": "cases/03-catchup-partial-source-continuity/with_skill/grading.json"
+        },
+        "without_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 445,
+          "output": "cases/03-catchup-partial-source-continuity/without_skill/answer.md",
+          "grading": "cases/03-catchup-partial-source-continuity/without_skill/grading.json"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "leader-prep-versus-relationships",
+      "skill": "find-low-leverage-workflows",
+      "checks": 5,
+      "conditions": {
+        "without_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 380,
+          "output": "cases/04-leader-prep-versus-relationships/without_skill/answer.md",
+          "grading": "cases/04-leader-prep-versus-relationships/without_skill/grading.json"
+        },
+        "with_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 525,
+          "output": "cases/04-leader-prep-versus-relationships/with_skill/answer.md",
+          "grading": "cases/04-leader-prep-versus-relationships/with_skill/grading.json"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "important-oneoffs-no-repetition",
+      "skill": "find-low-leverage-workflows",
+      "checks": 5,
+      "conditions": {
+        "without_skill": {
+          "passed": 3,
+          "total": 5,
+          "approximateWords": 75,
+          "output": "cases/05-important-oneoffs-no-repetition/without_skill/answer.md",
+          "grading": "cases/05-important-oneoffs-no-repetition/without_skill/grading.json"
+        },
+        "with_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 193,
+          "output": "cases/05-important-oneoffs-no-repetition/with_skill/answer.md",
+          "grading": "cases/05-important-oneoffs-no-repetition/with_skill/grading.json"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "shared-support-growth-and-ownership",
+      "skill": "find-low-leverage-workflows",
+      "checks": 5,
+      "conditions": {
+        "with_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 777,
+          "output": "cases/06-shared-support-growth-and-ownership/with_skill/answer.md",
+          "grading": "cases/06-shared-support-growth-and-ownership/with_skill/grading.json"
+        },
+        "without_skill": {
+          "passed": 5,
+          "total": 5,
+          "approximateWords": 564,
+          "output": "cases/06-shared-support-growth-and-ownership/without_skill/answer.md",
+          "grading": "cases/06-shared-support-growth-and-ownership/without_skill/grading.json"
+        }
+      }
+    }
+  ],
+  "findings": [
+    "The with-skill outputs met 30 of 30 predefined checks; baseline outputs met 28 of 30.",
+    "Both missed baseline checks concern the same no-candidate case: it offered no concrete recurring-work follow-up. These two checks overlap, so the gap should not be interpreted as two independent improvements.",
+    "Both conditions met every check in the other five cases; these fixtures show little incremental benefit over this baseline.",
+    "The with-skill outputs were longer in all six cases.",
+    "A with-skill Daily Debrief output incorrectly counted six excerpts as seven. This factual error was outside the original rubric, showing that a full rubric score does not mean an output is error-free."
+  ],
+  "limitations": [
+    "Six hand-authored fictional cases, not workplace outcome data.",
+    "One execution per case and condition; no uncertainty interval or significance claim.",
+    "Same inherited model configuration for execution and grading; exact backend identifier unavailable.",
+    "Only two starter skills tested; the other four have not had behavioral evaluations.",
+    "Explicit skill loading; installation, automatic triggering, MCP integrations, scheduling, multi-model portability, latency and cost were not tested.",
+    "Rubric was frozen before output inspection, while execution was in progress; one wording typo was clarified before grading.",
+    "Model-generated grading with coordinator AI review; no human scoring.",
+    "Pass counts measure the stated checks, not real-world productivity, accuracy or hours saved."
+  ],
+  "wordCountMethod": "Regex word-like sequences in raw Markdown, including source IDs and structured records; this is a reproducible length measure, not a readability score. Informal counts in raw grader notes are unverified estimates and can differ; the recomputation script defines the published counts.",
+  "nextSteps": [
+    "Shorten the default answer, retaining detailed continuity records only when useful.",
+    "Replace overlapping no-candidate criteria with distinct task outcomes and add a factual-count check.",
+    "Repeat across more cases and explicitly identified models, and invite human review."
+  ]
+}

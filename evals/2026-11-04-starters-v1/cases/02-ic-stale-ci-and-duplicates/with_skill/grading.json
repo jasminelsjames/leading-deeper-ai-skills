@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Explains that abc111’s failed run does not establish current CI failure for def222; current run 101 is queued and result unknown.",
+      "passed": true,
+      "evidence": "“Your current head is `def222`; run 101 was queued at 16:30, with no results available.” It explicitly says the abc111/run 100 failure “does not establish that the current head is failing.”"
+    },
+    {
+      "text": "Combines email-2 and chat-51 into one PR #51 review request, rather than two distinct action items.",
+      "passed": true,
+      "evidence": "Quinn’s email and chat are one request, still open at 17:00."
+    },
+    {
+      "text": "Keeps Riley as reviewer of Quinn’s PR #51, Sam as requested reviewer of Riley’s PR #42, and invents no review deadline.",
+      "passed": true,
+      "evidence": "“You are the requested reviewer; Quinn is the author. No deadline was given.” The PR #42 item says “Your current head” and “Sam has not yet reviewed”."
+    },
+    {
+      "text": "Preserves Riley’s stated rollout-decision commitment for tomorrow after the run, without reporting the decision or release as completed.",
+      "passed": true,
+      "evidence": "“Share the rollout decision on 10 April, after the current run finishes.” It states “No decision is recorded in the supplied evidence” and records the commitment as open."
+    },
+    {
+      "text": "States the partial-day scope and limited supplied-source coverage, with retrievable source IDs on the substantive followups.",
+      "passed": true,
+      "evidence": "“Partial day: 00:00 inclusive to 18:00 exclusive, America/New_York” and “Coverage is limited to the seven approved excerpts”. Followups cite specific source IDs and timestamps."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria pass. The detailed continuity table and discussion of retrieval boundaries add considerable length beyond this partial-day followup request.",
+    "'Tonight' is a suggested priority rather than an invented deadline: the section explicitly says suggestions, with no stated deadline."
+  ]
+}

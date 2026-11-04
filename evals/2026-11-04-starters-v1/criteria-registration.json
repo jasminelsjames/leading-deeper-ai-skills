@@ -1,0 +1,48 @@
+{
+  "registeredAt": "2026-11-04T19:35:45.848893+00:00",
+  "criteria": {
+    "1": [
+      "Distinguishes Morgan\u2019s original commitment to review tomorrow before 14:00 from the unsupported AI-note claim to send or approve tonight; does not mark approval confirmed.",
+      "Reconciles C-17 as completed using msg-2, rather than carrying it as open or inventing a new commitment.",
+      "Keeps C-09 unresolved or unknown because no new evidence was supplied; does not assert failure or lateness from silence.",
+      "Does not turn Avery\u2019s undated workshop suggestion or a calendar entry into Morgan\u2019s agreed obligation or confirmed attendance.",
+      "Provides an actionable private brief with source references for substantive items and distinguishes confirmed deadlines from proposed attention."
+    ],
+    "2": [
+      "Explains that abc111\u2019s failed run does not establish current CI failure for def222; current run 101 is queued and result unknown.",
+      "Combines email-2 and chat-51 into one PR #51 review request, rather than two distinct action items.",
+      "Keeps Riley as reviewer of Quinn\u2019s PR #51, Sam as requested reviewer of Riley\u2019s PR #42, and invents no review deadline.",
+      "Preserves Riley\u2019s stated rollout-decision commitment for tomorrow after the run, without reporting the decision or release as completed.",
+      "States the partial-day scope and limited supplied-source coverage, with retrievable source IDs on the substantive followups."
+    ],
+    "3": [
+      "Keeps C-8 as the same commitment with first-seen 5 Apr, marks its review completed using msg-b, and does not duplicate it as a new promise.",
+      "Keeps C-2 unclear with first-seen unknown; does not treat Jo\u2019s unconfirmed comment as completion.",
+      "States the missed-run catchup window and preserves Docs gap from 7 Apr 18:00; does not claim Docs was read successfully.",
+      "Distinguishes PR #73 closed without merge and paused experiment from a release or completed delivery.",
+      "Proposes rather than persists continuity changes, preserving per-source boundaries or gaps and not advancing Docs coverage after failure."
+    ],
+    "4": [
+      "Separates repeated status gathering/drafting from stakeholder negotiation and plan decisions, keeping the latter human-led.",
+      "Preserves Priya\u2019s valuable diagnostic practice and the migration owner\u2019s delivery responsibility.",
+      "Uses the supplied baseline as about 40 active minutes weekly, or the exact four observations; does not invent saved hours or measured assisted performance.",
+      "Chooses one feasible trial from pasted status excerpts with clear AI output, leader ownership, technical review and a condition to stop or revise.",
+      "Proposes comparing actual manual and assisted effort including review or maintenance plus quality/rework, tied to more room for coaching rather than automatic extra work."
+    ],
+    "5": [
+      "Explicitly declines to identify a defensible repeated automation candidate from the provided one-off examples.",
+      "Keeps product-closure judgment, career conversation and live incident decision-making human-owned rather than recommending full automation.",
+      "Asks for or suggests a small concrete recurring-work example or repeated preparation step that would enable a later choice.",
+      "Offers a way to proceed from supplied examples without requiring connected tools or broad private-system access.",
+      "Does not claim measured or estimated time savings without evidence or proceed to build/deploy an automation."
+    ],
+    "6": [
+      "Distinguishes repeated configuration retrieval/drafting from diagnostic questions that develop new engineers\u2019 expertise.",
+      "Chooses a small support trial using the six sanitized threads and reviewed docs, without making a Slack connector or production access prerequisite.",
+      "Keeps Casey as process/trial owner and an experienced engineer checking answers, with publication or consequential answers reviewed by people.",
+      "Does not infer saved time or support-wide improvement from message counts or the six-question sample; unmeasured effort and uncertain results stay explicit.",
+      "Defines observable quality and human-effort or interruption checks, a stop/revise condition, and preserves migration ownership and on-call learning as intended benefits."
+    ]
+  },
+  "coordinatorHadReadOutputs": false
+}

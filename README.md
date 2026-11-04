@@ -34,6 +34,10 @@ I choose the priorities. Do not send messages or change tasks.
 
 [Website guides](https://jasminejames.dev/leading-deeper) show the inputs, outputs and human checks. [catalog.json](catalog.json) provides the same skill names, requests, connector guidance and first-use contracts for agents. Examples are fictional, not company reports or measured benefits.
 
+## What have we tested?
+
+[Read the first evaluation](evals/2026-11-04-starters-v1/README.md): two starter skills, six fictional cases, and the actual answers with and without each skill. Results include longer answers and an error found outside the grading checks. This is an initial AI-graded comparison, not a productivity benchmark.
+
 ## Tried a skill?
 
 Did it work? [Share feedback](https://github.com/jasminelsjames/leading-deeper-ai-skills/issues/new) with what you expected, what happened and what would make the result more useful. Use fictional or sanitized examples.

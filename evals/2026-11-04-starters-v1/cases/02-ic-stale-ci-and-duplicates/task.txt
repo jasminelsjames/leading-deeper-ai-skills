@@ -1,0 +1,10 @@
+Prepare my private daily debrief for 9 April 2030, 00:00 through 18:00 America/New_York (partial day). I am Riley, an individual contributor. Use only these approved excerpts. Focus on what I need to follow up on, return the draft here, and take no external actions.
+
+[email-1, 09 Apr 09:10] CI failure notification for PR #42, commit abc111, job test-linux, run 100.
+[pr-42, 09 Apr 16:30] Current PR #42 head is def222; run 101 is queued. No results available yet. Owner Riley. Reviewer Sam has not reviewed.
+[email-2, 09 Apr 11:00] Quinn requested your review on PR #51.
+[chat-51, 09 Apr 11:05] Quinn: Please review PR #51 when you can. Same request as email-2, no deadline.
+[pr-51, 09 Apr 17:00] Review request still open. Author Quinn, requested reviewer Riley.
+[issue-7, 09 Apr 12:00] Riley commented: I will share a rollout decision tomorrow after the current run finishes. No decision recorded yet.
+[calendar-1, 09 Apr 14:00] Optional design meeting was cancelled.
+There is no prior brief, no other CI access and no authority to send messages or modify work records.

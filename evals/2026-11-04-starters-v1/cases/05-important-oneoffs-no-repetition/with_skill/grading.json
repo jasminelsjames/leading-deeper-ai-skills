@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Explicitly declines to identify a defensible repeated automation candidate from the provided one-off examples.",
+      "passed": true,
+      "evidence": "\"There isn’t enough evidence here to choose a sensible first automation\" and \"There is no supported ranking among these examples.\""
+    },
+    {
+      "text": "Keeps product-closure judgment, career conversation and live incident decision-making human-owned rather than recommending full automation.",
+      "passed": true,
+      "evidence": "Product closure: \"The accountable decision-maker must weigh tradeoffs and own the decision.\" Career: \"You own the quality of the conversation; your teammate owns their aspirations.\" Incident: \"The incident owner remains accountable\" and the team needs practice with changing facts."
+    },
+    {
+      "text": "Asks for or suggests a small concrete recurring-work example or repeated preparation step that would enable a later choice.",
+      "passed": true,
+      "evidence": "\"To make a future choice possible, bring one recurring preparation or coordination step, who owns it, a representative input and what would make its output correct. Include whether doing the step develops someone’s skills.\" This requests a specific small example and the evidence needed to choose it."
+    },
+    {
+      "text": "Offers a way to proceed from supplied examples without requiring connected tools or broad private-system access.",
+      "passed": true,
+      "evidence": "\"Preparation within these activities might eventually be a useful AI opportunity\" supplies a narrow direction from the existing examples, followed by a request for one recurring step and representative input. \"Connected tools are unnecessary for that identification.\" No broad system access is requested."
+    },
+    {
+      "text": "Does not claim measured or estimated time savings without evidence or proceed to build/deploy an automation.",
+      "passed": true,
+      "evidence": "\"Effort and potential benefit are also unknown\" and \"automate none of these on the evidence available.\" It neither estimates savings nor proceeds to implementation."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "notes": [
+    "All five criteria are supported. The suggested follow-up remains identification and evidence gathering rather than an implementation plan.",
+    "216 words. The ownership table is clear but somewhat more expansive than the narrow identification request requires."
+  ]
+}
